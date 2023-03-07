@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import * as dummyData from "../data/dummyDataAPI";
+import CounsellorCard from "./CounsellorCard";
 
 const CounsellorGallery = () => {
   const [languagesOptions, setLanguagesOptions] = useState(
@@ -68,14 +69,9 @@ const CounsellorGallery = () => {
         </select>
       </form>
 
-      {/* temporary gallery list  */}
-      <ul>
-        {galleryItems.map((item) => (
-          <li>
-            {item.firstName} {item.lastName}
-          </li>
-        ))}
-      </ul>
+      {galleryItems.map((item) => (
+        <CounsellorCard {...item} />
+      ))}
     </>
   );
 };
