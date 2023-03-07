@@ -83,8 +83,6 @@ export function getAllUniqueAreas() {
   return [...areas].sort();
 }
 
-export function getDetailedView(searchId) {
-  const item = data.find(({ id }) => id === searchId);
-
-  return item;
+export function getProfileView(searchId) {
+  return data.find(({ id }) => id === searchId);
 }

@@ -1,22 +1,20 @@
 import { useState, useEffect } from "react";
 import * as dummyData from "../data/dummyDataAPI";
 import CounsellorCard from "./CounsellorCard";
+import ModalWrapper from "./ModalWrapper";
+import ProfileView from "./ProfileView";
 
 const CounsellorGallery = () => {
   const [languagesOptions, setLanguagesOptions] = useState(
     dummyData.getAllUniqueLanguages()
   );
   const [filterLanguages, setFilterLanguages] = useState("");
-
   const [areasOptions, setAreasOptions] = useState(
     dummyData.getAllUniqueAreas()
   );
   const [filterAreas, setFilterAreas] = useState("");
-
   const [filterFreeText, setFilterFreeText] = useState("");
-
   const [galleryItems, setGalleryItems] = useState(dummyData.getGalleryItems());
-
   const [profileViewId, setProfileViewId] = useState();
   const [showProfileView, setShowProfileView] = useState(false);
 
@@ -31,9 +29,6 @@ const CounsellorGallery = () => {
         freeText: filterFreeText,
       })
     );
-
-    //hide detailed view
-    setShowProfileView(false);
   }, [filterLanguages, filterAreas, filterFreeText]);
 
   const clearFilters = () => {
@@ -49,7 +44,6 @@ const CounsellorGallery = () => {
 
   return (
     <>
-      <h2>GALLERY!</h2>
       <form onSubmit={(e) => e.preventDefault()}>
         <input
           placeholder="Sök..."
@@ -93,16 +87,13 @@ const CounsellorGallery = () => {
         <CounsellorCard key={item.id} showProfile={showProfile} {...item} />
       ))}
 
-      {/* debug */}
-      {showProfileView ? (
-        <div>
-          {Object.entries(dummyData.getDetailedView(profileViewId)).map((v) => (
-            <li>{v}</li>
-          ))}
-          <button onClick={() => setShowProfileView(false)}>CLOSE (X)</button>
-        </div>
-      ) : (
-        <></>
+      {showProfileView && (
+        <ModalWrapper closeCb={() => setShowProfileView(false)}>
+          <ProfileView
+            closeCb={() => setShowProfileView(false)}
+            item={dummyData.getProfileView(profileViewId)}
+          />
+        </ModalWrapper>
       )}
     </>
   );
