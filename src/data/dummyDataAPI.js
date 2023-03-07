@@ -1,6 +1,6 @@
 import data from "./dummyData";
 
-export function getListView(filter) {
+export function getGalleryItems(filter) {
   filter = {
     languages: [],
     areas: [],

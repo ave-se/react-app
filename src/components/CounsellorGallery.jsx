@@ -14,14 +14,14 @@ const CounsellorGallery = () => {
 
   const [filterFreeText, setFilterFreeText] = useState("");
 
-  const [galleryItems, setGalleryItems] = useState(dummyData.getListView());
+  const [galleryItems, setGalleryItems] = useState(dummyData.getGalleryItems());
 
   useEffect(() => {
     const languageArray = filterLanguages ? [filterLanguages] : [];
     const areasArray = filterAreas ? [filterAreas] : [];
 
     setGalleryItems(
-      dummyData.getListView({
+      dummyData.getGalleryItems({
         languages: languageArray,
         areas: areasArray,
         freeText: filterFreeText,

@@ -4,7 +4,7 @@ const DataDemo = () => {
   return (
     <>
       <h2>All entries</h2>
-      {dummyData.getListView().map((entry) => (
+      {dummyData.getGalleryItems().map((entry) => (
         <div>
           {Object.entries(entry).map(([k, v]) => (
             <div>
@@ -17,7 +17,7 @@ const DataDemo = () => {
       <hr />
 
       <h2>Entries filtered: "finska"</h2>
-      {dummyData.getListView({ languages: ["finska"] }).map((entry) => (
+      {dummyData.getGalleryItems({ languages: ["finska"] }).map((entry) => (
         <div>
           {Object.entries(entry).map(([k, v]) => (
             <div>
@@ -31,7 +31,7 @@ const DataDemo = () => {
 
       <h2>Entries filtered: "engelska" "depression"</h2>
       {dummyData
-        .getListView({ languages: ["engelska"], areas: ["depression"] })
+        .getGalleryItems({ languages: ["engelska"], areas: ["depression"] })
         .map((entry) => (
           <div>
             {Object.entries(entry).map(([k, v]) => (
@@ -46,7 +46,7 @@ const DataDemo = () => {
 
       <h2>Entries filtered: free text "staffan"</h2>
       {dummyData
-        .getListView({
+        .getGalleryItems({
           languages: ["engelska"],
           areas: ["javascript"],
           freeText: "staffan",
