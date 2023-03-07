@@ -37,13 +37,22 @@ export function getGalleryItems(filter) {
   }
 
   return filteredData.map(
-    ({ firstName, lastName, ratePerHour, avatarUrl, areas, title }) => ({
+    ({
       firstName,
       lastName,
       ratePerHour,
       avatarUrl,
       areas,
       title,
+      location,
+    }) => ({
+      firstName,
+      lastName,
+      ratePerHour,
+      avatarUrl,
+      areas,
+      title,
+      location,
     })
   );
 }
