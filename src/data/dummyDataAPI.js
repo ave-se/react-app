@@ -45,6 +45,7 @@ export function getGalleryItems(filter) {
       areas,
       title,
       location,
+      id,
     }) => ({
       firstName,
       lastName,
@@ -53,6 +54,7 @@ export function getGalleryItems(filter) {
       areas,
       title,
       location,
+      id,
     })
   );
 }
