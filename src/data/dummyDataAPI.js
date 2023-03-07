@@ -13,18 +13,19 @@ export function getListView(filter) {
   //filter: languages
   if (filter.languages.length > 0) {
     filteredData = filteredData.filter((entry) =>
-      filter.languages.some((language) => entry.languages.includes(language))
+      filter.languages.every((language) => entry.languages.includes(language))
     );
   }
 
   //filter: areas
   if (filter.areas.length > 0) {
     filteredData = filteredData.filter((entry) =>
-      filter.areas.some((area) => entry.areas.includes(area))
+      filter.areas.every((area) => entry.areas.includes(area))
     );
   }
 
   //filter: freeText
+  //todo: should look at full name as well...
   if (filter.freeText) {
     filteredData = filteredData.filter(
       (entry) =>
