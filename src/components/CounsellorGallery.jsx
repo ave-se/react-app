@@ -17,8 +17,8 @@ const CounsellorGallery = () => {
 
   const [galleryItems, setGalleryItems] = useState(dummyData.getGalleryItems());
 
-  const [detailedViewId, setDetailedViewId] = useState();
-  const [showDetailedView, setShowDetailedView] = useState(false);
+  const [profileViewId, setProfileViewId] = useState();
+  const [showProfileView, setShowProfileView] = useState(false);
 
   useEffect(() => {
     const languageArray = filterLanguages ? [filterLanguages] : [];
@@ -33,7 +33,7 @@ const CounsellorGallery = () => {
     );
 
     //hide detailed view
-    setShowDetailedView(false);
+    setShowProfileView(false);
   }, [filterLanguages, filterAreas, filterFreeText]);
 
   const clearFilters = () => {
@@ -43,8 +43,8 @@ const CounsellorGallery = () => {
   };
 
   const showProfile = (id = null) => {
-    setDetailedViewId(id);
-    setShowDetailedView(true);
+    setProfileViewId(id);
+    setShowProfileView(true);
   };
 
   return (
@@ -94,14 +94,12 @@ const CounsellorGallery = () => {
       ))}
 
       {/* debug */}
-      {showDetailedView ? (
+      {showProfileView ? (
         <div>
-          {Object.entries(dummyData.getDetailedView(detailedViewId)).map(
-            (v) => (
-              <li>{v}</li>
-            )
-          )}
-          <button onClick={() => setShowDetailedView(false)}>CLOSE (X)</button>
+          {Object.entries(dummyData.getDetailedView(profileViewId)).map((v) => (
+            <li>{v}</li>
+          ))}
+          <button onClick={() => setShowProfileView(false)}>CLOSE (X)</button>
         </div>
       ) : (
         <></>
