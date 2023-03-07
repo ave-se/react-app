@@ -2,6 +2,8 @@ const dummyData = [
   {
     firstName: "Hello",
     lastName: "World",
+    ratePerHour: 1500,
+    location: "Stockholm",
     title: "legitimierad psykolog",
     avatarUrl: "https://source.unsplash.com/random/500x500?portrait",
     areas: [
@@ -16,6 +18,8 @@ const dummyData = [
   {
     firstName: "Nummer",
     lastName: "Två",
+    ratePerHour: 1500,
+    location: "Stockholm",
     title: "legitimierad psykolog",
     avatarUrl: "https://source.unsplash.com/random/500x500?portrait",
     areas: ["utmattningssyndrom", "ångest/oro", "sömnproblem"],
@@ -24,10 +28,22 @@ const dummyData = [
   {
     firstName: "Staffan",
     lastName: "Ösp",
+    ratePerHour: 1500,
+    location: "Stockholm",
     title: "legitimierad psykolog",
     avatarUrl: "https://source.unsplash.com/random/500x500?portrait",
     areas: ["javascript"],
     languages: ["svenska", "engelska"],
+  },
+  {
+    firstName: "Anna",
+    lastName: "Bohlin",
+    ratePerHour: 1500,
+    location: "Stockholm",
+    title: "legitimierad psykolog",
+    avatarUrl: "https://source.unsplash.com/random/500x500?portrait",
+    areas: ["javascript"],
+    languages: ["chinese", "french"],
   },
 ];
 

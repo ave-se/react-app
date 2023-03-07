@@ -36,7 +36,16 @@ export function getListView(filter) {
     );
   }
 
-  return filteredData;
+  return filteredData.map(
+    ({ firstName, lastName, ratePerHour, avatarUrl, areas, title }) => ({
+      firstName,
+      lastName,
+      ratePerHour,
+      avatarUrl,
+      areas,
+      title,
+    })
+  );
 }
 
 export function getAllUniqueLanguages() {
