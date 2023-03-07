@@ -17,6 +17,9 @@ const CounsellorGallery = () => {
 
   const [galleryItems, setGalleryItems] = useState(dummyData.getGalleryItems());
 
+  const [detailedViewId, setDetailedViewId] = useState();
+  const [showDetailedView, setShowDetailedView] = useState(false);
+
   useEffect(() => {
     const languageArray = filterLanguages ? [filterLanguages] : [];
     const areasArray = filterAreas ? [filterAreas] : [];
@@ -28,7 +31,21 @@ const CounsellorGallery = () => {
         freeText: filterFreeText,
       })
     );
+
+    //hide detailed view
+    setShowDetailedView(false);
   }, [filterLanguages, filterAreas, filterFreeText]);
+
+  const clearFilters = () => {
+    setFilterLanguages("");
+    setFilterAreas("");
+    setFilterFreeText("");
+  };
+
+  const showProfile = (id = null) => {
+    setDetailedViewId(id);
+    setShowDetailedView(true);
+  };
 
   return (
     <>
@@ -47,11 +64,11 @@ const CounsellorGallery = () => {
             setFilterLanguages(e.target.value);
           }}
         >
-          <option value="" selected>
-            Språk
-          </option>
-          {languagesOptions.map((language) => (
-            <option value={language}>{language}</option>
+          <option value="">Språk</option>
+          {languagesOptions.map((language, i) => (
+            <option key={i} value={language}>
+              {language}
+            </option>
           ))}
         </select>
         <select
@@ -60,18 +77,35 @@ const CounsellorGallery = () => {
             setFilterAreas(e.target.value);
           }}
         >
-          <option value="" selected>
-            Specialområde
-          </option>
-          {areasOptions.map((area) => (
-            <option value={area}>{area}</option>
+          <option value="">Specialområde</option>
+          {areasOptions.map((area, i) => (
+            <option key={i} value={area}>
+              {area}
+            </option>
           ))}
         </select>
+        <button type="button" onClick={clearFilters}>
+          Rensa filter
+        </button>
       </form>
 
       {galleryItems.map((item) => (
-        <CounsellorCard {...item} />
+        <CounsellorCard key={item.id} showProfile={showProfile} {...item} />
       ))}
+
+      {/* debug */}
+      {showDetailedView ? (
+        <div>
+          {Object.entries(dummyData.getDetailedView(detailedViewId)).map(
+            (v) => (
+              <li>{v}</li>
+            )
+          )}
+          <button onClick={() => setShowDetailedView(false)}>CLOSE (X)</button>
+        </div>
+      ) : (
+        <></>
+      )}
     </>
   );
 };

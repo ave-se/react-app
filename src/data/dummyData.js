@@ -15,6 +15,7 @@ const dummyData = [
       "depression",
     ],
     languages: ["svenska", "engelska"],
+    description: "my description!",
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ const dummyData = [
     avatarUrl: "https://source.unsplash.com/random/500x500?portrait",
     areas: ["utmattningssyndrom", "ångest/oro", "sömnproblem"],
     languages: ["svenska", "finska"],
+    description: "my description!",
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ const dummyData = [
     avatarUrl: "https://source.unsplash.com/random/500x500?portrait",
     areas: ["javascript"],
     languages: ["svenska", "engelska"],
+    description: "my description!",
   },
   {
     id: 4,
@@ -48,6 +51,7 @@ const dummyData = [
     avatarUrl: "https://source.unsplash.com/random/500x500?portrait",
     areas: ["javascript"],
     languages: ["chinese", "french"],
+    description: "my description!",
   },
 ];
 
