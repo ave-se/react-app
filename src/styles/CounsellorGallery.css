@@ -1,7 +1,8 @@
 .councellor-gallery-wrapper {
 	display: grid;
-	grid-template-columns: 240px 240px 240px 240px;
-	column-gap: 64px;
-	row-gap: 46px;
-	justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	column-gap: 4rem;
+	row-gap: 2.875rem;
+	
+	margin: 11.25rem;
 }
