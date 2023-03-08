@@ -46,6 +46,7 @@ const CounsellorGallery = () => {
 
   return (
     <>
+      <h2>Hitta handledare över hela Sverige!</h2>
       <form onSubmit={(e) => e.preventDefault()}>
         <input
           placeholder="Sök..."
