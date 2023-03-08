@@ -1,3 +1,5 @@
+import Tag from "./Tag";
+
 const CounsellorCard = ({
   showProfile,
   avatarUrl,
@@ -15,7 +17,12 @@ const CounsellorCard = ({
       <p>{location}</p>
       <h4>{title}</h4>
       <p>{ratePerHour}</p>
-      <p>{areas}</p>
+      {/*area tags container, remove inline style :) */}
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "4px" }}>
+        {areas.map((area) => (
+          <Tag>{area}</Tag>
+        ))}
+      </div>
       <button onClick={() => showProfile(id)}>Visa Profil</button>
     </>
   );

@@ -83,9 +83,11 @@ const CounsellorGallery = () => {
         </button>
       </form>
 
-      {galleryItems.map((item) => (
-        <CounsellorCard key={item.id} showProfile={showProfile} {...item} />
-      ))}
+      <div style={{ display: "flex", gap: "16px" }}>
+        {galleryItems.map((item) => (
+          <CounsellorCard key={item.id} showProfile={showProfile} {...item} />
+        ))}
+      </div>
 
       {showProfileView && (
         <ModalWrapper closeCb={() => setShowProfileView(false)}>
