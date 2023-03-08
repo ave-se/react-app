@@ -11,3 +11,23 @@ h2 {
 	font-weight: 600;
 	font-size: 2.5rem;
 }
+
+form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 16px;
+	font-size: 1.25rem;
+}
+
+select {
+	padding: 4px 12px 4px 36px;
+	gap: 12px;
+	border: 1px solid black;
+	border-radius: 16px;
+}
+
+select::-ms-expand {
+	display: none;
+	}
