@@ -1,0 +1,7 @@
+.councellor-gallery-wrapper {
+	display: grid;
+	grid-template-columns: 240px 240px 240px 240px;
+	column-gap: 64px;
+	row-gap: 46px;
+	justify-content: center;
+}
