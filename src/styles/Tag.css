@@ -5,6 +5,8 @@
 }
 
 .tag {
-	background-color: red;
+	background-color: #A5D0D0;
 	padding: 2px;
+	border-radius: 16px;
+	padding: 0.25rem 1rem;
 }
