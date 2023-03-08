@@ -1,5 +1,7 @@
 import Tag from "./Tag";
 
+import "../styles/CounsellorCard.css";
+
 const CounsellorCard = ({
   showProfile,
   avatarUrl,
@@ -12,14 +14,13 @@ const CounsellorCard = ({
 }) => {
   return (
     <>
-			<div>
+			<div className="counsellor-card">
 				<img src={avatarUrl} alt="" />
 				<h3>{firstName}</h3>
 				<p>{location}</p>
 				<h4>{title}</h4>
 				<p>{ratePerHour}</p>
-				{/*area tags container, remove inline style :) */}
-				<div style={{ display: "flex", flexWrap: "wrap", gap: "4px" }}>
+				<div className="tag-wrapper">
 					{areas.map((area) => (
 						<Tag>{area}</Tag>
 					))}

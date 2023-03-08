@@ -4,6 +4,8 @@ import CounsellorCard from "./CounsellorCard";
 import ModalWrapper from "./ModalWrapper";
 import ProfileView from "./ProfileView";
 
+import "../styles/CounsellorGallery.css";
+
 const CounsellorGallery = () => {
   const [languagesOptions, setLanguagesOptions] = useState(
     dummyData.getAllUniqueLanguages()
@@ -83,7 +85,7 @@ const CounsellorGallery = () => {
         </button>
       </form>
 
-      <div style={{ display: "flex", gap: "16px" }}>
+      <div className="councellor-gallery-wrapper">
         {galleryItems.map((item) => (
           <CounsellorCard key={item.id} showProfile={showProfile} {...item} />
         ))}

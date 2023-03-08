@@ -1,6 +1,8 @@
+import "../styles/Tag.css";
+
 const Tag = ({ children }) => {
   return (
-    <div style={{ backgroundColor: "red", padding: "2px" }}>{children}</div>
+    <div className="tag">{children}</div>
   );
 };
 
