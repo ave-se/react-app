@@ -45,7 +45,7 @@ const CounsellorGallery = () => {
   };
 
   return (
-    <>
+    <div className="counsellor-gallery-wrapper">
       <h2>Hitta handledare över hela Sverige!</h2>
       <form onSubmit={(e) => e.preventDefault()}>
         <input
@@ -86,7 +86,7 @@ const CounsellorGallery = () => {
         </button>
       </form>
 
-      <div className="councellor-gallery-wrapper">
+      <div className="counsellor-card-wrapper">
         {galleryItems.map((item) => (
           <CounsellorCard key={item.id} showProfile={showProfile} {...item} />
         ))}
@@ -100,7 +100,7 @@ const CounsellorGallery = () => {
           />
         </ModalWrapper>
       )}
-    </>
+    </div>
   );
 };
 

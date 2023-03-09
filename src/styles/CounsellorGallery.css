@@ -1,15 +1,11 @@
-.councellor-gallery-wrapper {
-	display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	column-gap: 4rem;
-	row-gap: 2.875rem;
-	
-	margin: 11.25rem;
+.counsellor-gallery-wrapper {
+	margin: 0rem 11.25rem;
 }
 
 h2 {
 	font-weight: 600;
 	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
 }
 
 form {
@@ -27,7 +23,3 @@ select {
 	border: 1px solid black;
 	border-radius: 16px;
 }
-
-select::-ms-expand {
-	display: none;
-	}
