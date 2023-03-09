@@ -86,7 +86,7 @@ const CounsellorGallery = () => {
         </button>
       </form>
 
-      <div className="counsellor-card-wrapper">
+      <div className="counsellor-gallery-cards-wrapper">
         {galleryItems.map((item) => (
           <CounsellorCard key={item.id} showProfile={showProfile} {...item} />
         ))}

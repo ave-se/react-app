@@ -1,23 +1,7 @@
-.counsellor-card-wrapper {
-	display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	column-gap: 4rem;
-	row-gap: 2.875rem;
-	margin-top: 7.75rem;
-}
-
-.counsellor-card-wrapper button {
-	border: none;
-	background: none;
-	color: #323131;
-	font-size: 0.75rem;
-	text-decoration: underline;
-	margin: 0.5rem 0;
-}
-
 .counsellor-card {
 	border: 1px solid #BABABA;
 	border-radius: 6px;
+	padding: 1rem 1.25rem 0.5rem;
 }
 
 .counsellor-card > img {

@@ -2,6 +2,23 @@
 	margin: 0rem 11.25rem;
 }
 
+.counsellor-gallery-cards-wrapper {
+	display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	column-gap: 4rem;
+	row-gap: 2.875rem;
+	margin-top: 7.75rem;
+}
+
+.counsellor-gallery-cards-wrapper button {
+	border: none;
+	background: none;
+	color: #323131;
+	font-size: 0.75rem;
+	text-decoration: underline;
+	margin: 0.5rem 0;
+}
+
 h2 {
 	font-weight: 600;
 	font-size: 2.5rem;
