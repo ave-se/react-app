@@ -38,7 +38,7 @@ export function getGalleryItems(filter) {
   return filteredData.map(
     ({
       firstName,
-      ratePerHour,
+      ratePerSession,
       avatarUrl,
       areas,
       title,
@@ -46,7 +46,7 @@ export function getGalleryItems(filter) {
       id,
     }) => ({
       firstName,
-      ratePerHour,
+      ratePerSession,
       avatarUrl,
       areas,
       title,

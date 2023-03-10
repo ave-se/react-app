@@ -8,7 +8,7 @@ const CounsellorCard = ({
   firstName,
   title,
   location,
-  ratePerHour,
+  ratePerSession,
   areas,
   id,
 }) => {
@@ -19,7 +19,7 @@ const CounsellorCard = ({
 				<h3>{firstName}</h3>
 				<p>{location}</p>
 				<h4>{title}</h4>
-				<p>{ratePerHour}</p>
+				<p>{ratePerSession}</p>
 				<div className="tag-wrapper">
 					{areas.map((area) => (
 						<Tag>{area}</Tag>

@@ -2,7 +2,7 @@ const dummyData = [
   {
     id: 1,
     firstName: "Hello",
-    ratePerHour: 1500,
+    ratePerSession: 1500,
     location: "Stockholm",
     title: "legitimierad psykolog",
     avatarUrl: "https://source.unsplash.com/random/500x500?portrait",
@@ -19,7 +19,7 @@ const dummyData = [
   {
     id: 2,
     firstName: "Nummer",
-    ratePerHour: 1500,
+    ratePerSession: 1500,
     location: "Stockholm",
     title: "legitimierad psykolog",
     avatarUrl: "https://source.unsplash.com/random/500x501?portrait",
@@ -30,7 +30,7 @@ const dummyData = [
   {
     id: 3,
     firstName: "Staffan",
-    ratePerHour: 1500,
+    ratePerSession: 1500,
     location: "Stockholm",
     title: "legitimierad psykolog",
     avatarUrl: "https://source.unsplash.com/random/500x502?portrait",
@@ -41,7 +41,7 @@ const dummyData = [
   {
     id: 4,
     firstName: "Anna",
-    ratePerHour: 1500,
+    ratePerSession: 1500,
     location: "Stockholm",
     title: "legitimierad psykolog",
     avatarUrl: "https://source.unsplash.com/random/500x503?portrait",
