@@ -2,7 +2,6 @@ const dummyData = [
   {
     id: 1,
     firstName: "Hello",
-    lastName: "World",
     ratePerHour: 1500,
     location: "Stockholm",
     title: "legitimierad psykolog",
@@ -20,7 +19,6 @@ const dummyData = [
   {
     id: 2,
     firstName: "Nummer",
-    lastName: "Två",
     ratePerHour: 1500,
     location: "Stockholm",
     title: "legitimierad psykolog",
@@ -32,7 +30,6 @@ const dummyData = [
   {
     id: 3,
     firstName: "Staffan",
-    lastName: "Ösp",
     ratePerHour: 1500,
     location: "Stockholm",
     title: "legitimierad psykolog",
@@ -44,7 +41,6 @@ const dummyData = [
   {
     id: 4,
     firstName: "Anna",
-    lastName: "Bohlin",
     ratePerHour: 1500,
     location: "Stockholm",
     title: "legitimierad psykolog",

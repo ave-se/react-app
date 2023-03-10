@@ -31,15 +31,13 @@ export function getGalleryItems(filter) {
       (entry) =>
         entry.firstName
           .toLowerCase()
-          .startsWith(filter.freeText.toLowerCase()) ||
-        entry.lastName.toLowerCase().startsWith(filter.freeText.toLowerCase())
+          .startsWith(filter.freeText.toLowerCase())
     );
   }
 
   return filteredData.map(
     ({
       firstName,
-      lastName,
       ratePerHour,
       avatarUrl,
       areas,
@@ -48,7 +46,6 @@ export function getGalleryItems(filter) {
       id,
     }) => ({
       firstName,
-      lastName,
       ratePerHour,
       avatarUrl,
       areas,
