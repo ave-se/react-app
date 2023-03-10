@@ -1,7 +1,7 @@
 const dummyData = [
   {
     id: 1,
-    firstName: "Hello",
+    firstName: "Anna",
     ratePerSession: 1500,
     location: "Stockholm",
     title: "legitimierad psykolog",
@@ -25,7 +25,7 @@ const dummyData = [
   },
   {
     id: 2,
-    firstName: "Nummer",
+    firstName: "Ave",
     ratePerSession: 1500,
     location: "Stockholm",
     title: "legitimierad psykolog",
@@ -61,13 +61,13 @@ const dummyData = [
   },
   {
     id: 4,
-    firstName: "Anna",
+    firstName: "Samira",
     ratePerSession: 1500,
     location: "Stockholm",
     title: "legitimierad psykolog",
     avatarUrl: "https://source.unsplash.com/random/500x503?portrait",
     areas: ["javascript"],
-    languages: ["chinese", "french"],
+    languages: ["chinese", "french"], 
     onSiteOrRemote: ["digitalt"],
     elevatorPitch: "This is my elevator pitch",
     aboutMe: "This is my about me",
