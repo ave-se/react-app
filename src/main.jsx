@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import Root from "./routes/Root";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
 import CounsellorGallery from "./routes/CounsellorGallery";
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
 
   {
     path: "/",
-    element: <App />,
+    element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       {

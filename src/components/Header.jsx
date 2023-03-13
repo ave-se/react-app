@@ -1,7 +1,7 @@
 import "../styles/Header.css";
 import { NavLink } from "react-router-dom";
 
-const Header = ({ currentPage, setCurrentPage }) => {
+const Header = () => {
   return (
     <header id="header" style={{ padding: "16px" }}>
       <nav>
