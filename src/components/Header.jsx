@@ -1,33 +1,23 @@
 import "../styles/Header.css";
+import { NavLink } from "react-router-dom";
 
 const Header = ({ currentPage, setCurrentPage }) => {
   return (
-    <div style={{ padding: "16px" }}>
-      <h2>Nav:</h2>
-      <div style={{ display: "flex", gap: "8px" }}>
-        <button
-          class={currentPage === "about" && "header-selected"}
-          type="button"
-          onClick={() => setCurrentPage("about")}
-        >
-          Vad handledning är
-        </button>
-        <button
-          class={currentPage === "contact" && "header-selected"}
-          type="button"
-          onClick={() => setCurrentPage("contact")}
-        >
-          Kontakta oss
-        </button>
-        <button
-          class={currentPage === "gallery" && "header-selected"}
-          type="button"
-          onClick={() => setCurrentPage("gallery")}
-        >
-          Sök handledare
-        </button>
-      </div>
-    </div>
+    <header id="header" style={{ padding: "16px" }}>
+      <nav>
+        <ul>
+          <li>
+            <NavLink to={`about`}>Vad handledning är</NavLink>
+          </li>
+          <li>
+            <NavLink to={`contact`}>Kontakta oss</NavLink>
+          </li>
+          <li>
+            <NavLink to={`gallery`}>Sök handledare</NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 

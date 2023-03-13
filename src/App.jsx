@@ -1,12 +1,10 @@
 import "./App.css";
 import Header from "./components/Header";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import CounsellorGallery from "./components/CounsellorGallery";
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("about"); //about | contact | gallery
+  const [currentPage, setCurrentPage] = useState(""); //about | contact | gallery
 
   let pageComponent;
   switch (currentPage) {
@@ -27,7 +25,7 @@ function App() {
   return (
     <>
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      {pageComponent}
+      <Outlet />
     </>
   );
 }

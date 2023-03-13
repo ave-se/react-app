@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import * as dummyData from "../data/dummyDataAPI";
-import CounsellorCard from "./CounsellorCard";
-import ModalWrapper from "./ModalWrapper";
-import ProfileView from "./ProfileView";
+import CounsellorCard from "../components/CounsellorCard";
+import ModalWrapper from "../components/ModalWrapper";
+import ProfileView from "../components/ProfileView";
 
 import "../styles/CounsellorGallery.css";
 
