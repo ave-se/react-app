@@ -7,35 +7,42 @@ import ProfileView from "../components/ProfileView";
 import "../styles/CounsellorGallery.css";
 
 const CounsellorGallery = () => {
-  const [languagesOptions, setLanguagesOptions] = useState(
-    dummyData.getAllUniqueLanguages()
-  );
-  const [filterLanguages, setFilterLanguages] = useState("");
   const [areasOptions, setAreasOptions] = useState(
     dummyData.getAllUniqueAreas()
   );
   const [filterAreas, setFilterAreas] = useState("");
+  const [locationsOptions, setLocationsOptions] = useState(
+    dummyData.getAllUniqueLocations()
+  );
+  const [filterLocations, setFilterLocations] = useState("");
+  const [remoteOptionsOptions, setRemoteOptionsOptions] = useState(
+    dummyData.getAllUniqueRemoteOptions()
+  );
+  const [filterRemoteOptions, setFilterRemoteOptions] = useState("");
   const [filterFreeText, setFilterFreeText] = useState("");
   const [galleryItems, setGalleryItems] = useState(dummyData.getGalleryItems());
   const [profileViewId, setProfileViewId] = useState();
   const [showProfileView, setShowProfileView] = useState(false);
 
   useEffect(() => {
-    const languageArray = filterLanguages ? [filterLanguages] : [];
     const areasArray = filterAreas ? [filterAreas] : [];
+    const locationsArray = filterLocations ? [filterLocations] : [];
+    const remoteOptionsArray = filterRemoteOptions ? [filterRemoteOptions] : [];
 
     setGalleryItems(
       dummyData.getGalleryItems({
-        languages: languageArray,
         areas: areasArray,
+        location: locationsArray,
+        remoteOptions: remoteOptionsArray,
         freeText: filterFreeText,
       })
     );
-  }, [filterLanguages, filterAreas, filterFreeText]);
+  }, [filterAreas, filterLocations, filterRemoteOptions, filterFreeText]);
 
   const clearFilters = () => {
-    setFilterLanguages("");
     setFilterAreas("");
+    setFilterLocations("");
+    setFilterRemoteOptions("");
     setFilterFreeText("");
   };
 
@@ -56,15 +63,15 @@ const CounsellorGallery = () => {
           }}
         />
         <select
-          value={filterLanguages}
+          value={filterLocations}
           onChange={(e) => {
-            setFilterLanguages(e.target.value);
+            setFilterLocations(e.target.value);
           }}
         >
-          <option value="">Språk</option>
-          {languagesOptions.map((language, i) => (
-            <option key={i} value={language}>
-              {language}
+          <option value="">Region</option>
+          {locationsOptions.map((location, i) => (
+            <option key={i} value={location}>
+              {location}
             </option>
           ))}
         </select>
@@ -81,8 +88,21 @@ const CounsellorGallery = () => {
             </option>
           ))}
         </select>
+        <select
+          value={filterRemoteOptions}
+          onChange={(e) => {
+            setFilterRemoteOptions(e.target.value);
+          }}
+        >
+          <option value="">I lokal/digitalt</option>
+          {remoteOptionsOptions.map((remoteOption, i) => (
+            <option key={i} value={remoteOption}>
+              {remoteOption}
+            </option>
+          ))}
+        </select>
         <button type="button" onClick={clearFilters}>
-          Rensa filter
+          Rensa alla filter
         </button>
       </form>
 
