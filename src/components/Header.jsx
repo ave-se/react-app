@@ -7,6 +7,11 @@ const Header = () => {
       <nav>
         <ul>
           <li>
+            <NavLink to={`home`}>
+              Homepage (TEMPORARY, should be "default" route)
+            </NavLink>
+          </li>
+          <li>
             <NavLink to={`about`}>Vad handledning är</NavLink>
           </li>
           <li>
