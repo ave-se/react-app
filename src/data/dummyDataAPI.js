@@ -4,6 +4,7 @@ export function getGalleryItems(filter) {
   filter = {
     languages: [],
     areas: [],
+    location: [],
     freeText: "",
     ...filter,
   };
@@ -21,6 +22,13 @@ export function getGalleryItems(filter) {
   if (filter.areas.length > 0) {
     filteredData = filteredData.filter((entry) =>
       filter.areas.every((area) => entry.areas.includes(area))
+    );
+  }
+
+  // filter: location
+  if (filter.location.length > 0) {
+    filteredData = filteredData.filter((entry) =>
+      filter.location.every((location) => entry.location.includes(location))
     );
   }
 
@@ -78,6 +86,16 @@ export function getAllUniqueAreas() {
   }
 
   return [...areas].sort();
+}
+
+export function getAllUniqueLocations() {
+  const locations = new Set();
+
+  for (let entry of data) {
+    locations.add(entry.location);
+  }
+
+  return [...locations].sort();
 }
 
 export function getProfileView(searchId) {

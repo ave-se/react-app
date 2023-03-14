@@ -15,6 +15,10 @@ const CounsellorGallery = () => {
     dummyData.getAllUniqueAreas()
   );
   const [filterAreas, setFilterAreas] = useState("");
+  const [locationsOptions, setLocationsOptions] = useState(
+    dummyData.getAllUniqueLocations()
+  );
+  const [filterLocations, setFilterLocations] = useState("");
   const [filterFreeText, setFilterFreeText] = useState("");
   const [galleryItems, setGalleryItems] = useState(dummyData.getGalleryItems());
   const [profileViewId, setProfileViewId] = useState();
@@ -23,19 +27,22 @@ const CounsellorGallery = () => {
   useEffect(() => {
     const languageArray = filterLanguages ? [filterLanguages] : [];
     const areasArray = filterAreas ? [filterAreas] : [];
+    const locationsArray = filterLocations ? [filterLocations] : [];
 
     setGalleryItems(
       dummyData.getGalleryItems({
         languages: languageArray,
         areas: areasArray,
+        locations: locationsArray,
         freeText: filterFreeText,
       })
     );
-  }, [filterLanguages, filterAreas, filterFreeText]);
+  }, [filterLanguages, filterAreas, filterLocations, filterFreeText]);
 
   const clearFilters = () => {
     setFilterLanguages("");
     setFilterAreas("");
+    setFilterLocations("");
     setFilterFreeText("");
   };
 
@@ -78,6 +85,19 @@ const CounsellorGallery = () => {
           {areasOptions.map((area, i) => (
             <option key={i} value={area}>
               {area}
+            </option>
+          ))}
+        </select>
+        <select
+          value={filterLocations}
+          onChange={(e) => {
+            setFilterLocations(e.target.value);
+          }}
+        >
+          <option value="">Region</option>
+          {locationsOptions.map((location, i) => (
+            <option key={i} value={location}>
+              {location}
             </option>
           ))}
         </select>
