@@ -5,10 +5,10 @@ import About from "./routes/About";
 import Contact from "./routes/Contact";
 import CounsellorGallery from "./routes/CounsellorGallery";
 import Homepage from "./routes/Homepage";
+import ProfileView from "./components/ProfileView";
 
 import "./index.css";
 import ErrorPage from "./error-page";
-import { redirect } from "react-router-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -34,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "gallery",
         element: <CounsellorGallery />,
+      },
+      {
+        path: "gallery/:profileId",
+        element: <ProfileView />,
       },
     ],
   },

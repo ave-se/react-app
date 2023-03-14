@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import * as dummyData from "../data/dummyDataAPI";
 import CounsellorCard from "../components/CounsellorCard";
-import ModalWrapper from "../components/ModalWrapper";
-import ProfileView from "../components/ProfileView";
 
 import "../styles/CounsellorGallery.css";
 
@@ -21,8 +19,6 @@ const CounsellorGallery = () => {
   const [filterRemoteOptions, setFilterRemoteOptions] = useState("");
   const [filterFreeText, setFilterFreeText] = useState("");
   const [galleryItems, setGalleryItems] = useState(dummyData.getGalleryItems());
-  const [profileViewId, setProfileViewId] = useState();
-  const [showProfileView, setShowProfileView] = useState(false);
 
   useEffect(() => {
     const areasArray = filterAreas ? [filterAreas] : [];
@@ -44,11 +40,6 @@ const CounsellorGallery = () => {
     setFilterLocations("");
     setFilterRemoteOptions("");
     setFilterFreeText("");
-  };
-
-  const showProfile = (id = null) => {
-    setProfileViewId(id);
-    setShowProfileView(true);
   };
 
   return (
@@ -108,18 +99,9 @@ const CounsellorGallery = () => {
 
       <div className="counsellor-gallery-cards-wrapper">
         {galleryItems.map((item) => (
-          <CounsellorCard key={item.id} showProfile={showProfile} {...item} />
+          <CounsellorCard key={item.id} {...item} />
         ))}
       </div>
-
-      {showProfileView && (
-        <ModalWrapper closeCb={() => setShowProfileView(false)}>
-          <ProfileView
-            closeCb={() => setShowProfileView(false)}
-            item={dummyData.getProfileView(profileViewId)}
-          />
-        </ModalWrapper>
-      )}
     </div>
   );
 };
