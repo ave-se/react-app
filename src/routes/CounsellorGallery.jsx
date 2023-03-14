@@ -7,10 +7,6 @@ import ProfileView from "../components/ProfileView";
 import "../styles/CounsellorGallery.css";
 
 const CounsellorGallery = () => {
-  const [languagesOptions, setLanguagesOptions] = useState(
-    dummyData.getAllUniqueLanguages()
-  );
-  const [filterLanguages, setFilterLanguages] = useState("");
   const [areasOptions, setAreasOptions] = useState(
     dummyData.getAllUniqueAreas()
   );
@@ -29,24 +25,21 @@ const CounsellorGallery = () => {
   const [showProfileView, setShowProfileView] = useState(false);
 
   useEffect(() => {
-    const languageArray = filterLanguages ? [filterLanguages] : [];
     const areasArray = filterAreas ? [filterAreas] : [];
     const locationsArray = filterLocations ? [filterLocations] : [];
     const remoteOptionsArray = filterRemoteOptions ? [filterRemoteOptions] : [];
 
     setGalleryItems(
       dummyData.getGalleryItems({
-        languages: languageArray,
         areas: areasArray,
         locations: locationsArray,
         remoteOptions: remoteOptionsArray,
         freeText: filterFreeText,
       })
     );
-  }, [filterLanguages, filterAreas, filterLocations, filterRemoteOptions, filterFreeText]);
+  }, [filterAreas, filterLocations, filterRemoteOptions, filterFreeText]);
 
   const clearFilters = () => {
-    setFilterLanguages("");
     setFilterAreas("");
     setFilterLocations("");
     setFilterRemoteOptions("");
@@ -69,19 +62,6 @@ const CounsellorGallery = () => {
             setFilterFreeText(e.target.value);
           }}
         />
-        <select
-          value={filterLanguages}
-          onChange={(e) => {
-            setFilterLanguages(e.target.value);
-          }}
-        >
-          <option value="">Språk</option>
-          {languagesOptions.map((language, i) => (
-            <option key={i} value={language}>
-              {language}
-            </option>
-          ))}
-        </select>
         <select
           value={filterAreas}
           onChange={(e) => {

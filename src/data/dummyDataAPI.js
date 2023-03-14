@@ -2,7 +2,6 @@ import data from "./dummyData";
 
 export function getGalleryItems(filter) {
   filter = {
-    languages: [],
     areas: [],
     location: [],
     remoteOptions: [],
@@ -11,13 +10,6 @@ export function getGalleryItems(filter) {
   };
 
   let filteredData = data;
-
-  //filter: languages
-  if (filter.languages.length > 0) {
-    filteredData = filteredData.filter((entry) =>
-      filter.languages.every((language) => entry.languages.includes(language))
-    );
-  }
 
   //filter: areas
   if (filter.areas.length > 0) {
@@ -70,18 +62,6 @@ export function getGalleryItems(filter) {
       id,
     })
   );
-}
-
-export function getAllUniqueLanguages() {
-  const languages = new Set();
-
-  for (let entry of data) {
-    for (let language of entry.languages) {
-      languages.add(language);
-    }
-  }
-
-  return [...languages].sort();
 }
 
 export function getAllUniqueAreas() {
