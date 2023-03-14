@@ -19,6 +19,10 @@ const CounsellorGallery = () => {
     dummyData.getAllUniqueLocations()
   );
   const [filterLocations, setFilterLocations] = useState("");
+  const [remoteOptionsOptions, setRemoteOptionsOptions] = useState(
+    dummyData.getAllUniqueRemoteOptions()
+  );
+  const [filterRemoteOptions, setFilterRemoteOptions] = useState("");
   const [filterFreeText, setFilterFreeText] = useState("");
   const [galleryItems, setGalleryItems] = useState(dummyData.getGalleryItems());
   const [profileViewId, setProfileViewId] = useState();
@@ -28,21 +32,24 @@ const CounsellorGallery = () => {
     const languageArray = filterLanguages ? [filterLanguages] : [];
     const areasArray = filterAreas ? [filterAreas] : [];
     const locationsArray = filterLocations ? [filterLocations] : [];
+    const remoteOptionsArray = filterRemoteOptions ? [filterRemoteOptions] : [];
 
     setGalleryItems(
       dummyData.getGalleryItems({
         languages: languageArray,
         areas: areasArray,
         locations: locationsArray,
+        remoteOptions: remoteOptionsArray,
         freeText: filterFreeText,
       })
     );
-  }, [filterLanguages, filterAreas, filterLocations, filterFreeText]);
+  }, [filterLanguages, filterAreas, filterLocations, filterRemoteOptions, filterFreeText]);
 
   const clearFilters = () => {
     setFilterLanguages("");
     setFilterAreas("");
     setFilterLocations("");
+    setFilterRemoteOptions("");
     setFilterFreeText("");
   };
 
@@ -98,6 +105,19 @@ const CounsellorGallery = () => {
           {locationsOptions.map((location, i) => (
             <option key={i} value={location}>
               {location}
+            </option>
+          ))}
+        </select>
+        <select
+          value={filterRemoteOptions}
+          onChange={(e) => {
+            setFilterRemoteOptions(e.target.value);
+          }}
+        >
+          <option value="">I lokal/digitalt</option>
+          {remoteOptionsOptions.map((remoteOption, i) => (
+            <option key={i} value={remoteOption}>
+              {remoteOption}
             </option>
           ))}
         </select>

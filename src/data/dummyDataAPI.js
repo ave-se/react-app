@@ -5,6 +5,7 @@ export function getGalleryItems(filter) {
     languages: [],
     areas: [],
     location: [],
+    remoteOptions: [],
     freeText: "",
     ...filter,
   };
@@ -29,6 +30,13 @@ export function getGalleryItems(filter) {
   if (filter.location.length > 0) {
     filteredData = filteredData.filter((entry) =>
       filter.location.every((location) => entry.location.includes(location))
+    );
+  }
+
+  // filter: remote or on site sessions
+  if (filter.remoteOptions.length > 0) {
+    filteredData = filteredData.filter((entry) =>
+      filter.remoteOptions.every((remoteOption) => entry.remoteOptions.includes(remoteOption))
     );
   }
 
@@ -96,6 +104,18 @@ export function getAllUniqueLocations() {
   }
 
   return [...locations].sort();
+}
+
+export function getAllUniqueRemoteOptions() {
+  const remoteOptions = new Set();
+
+  for (let entry of data) {
+    for (let remoteOption of entry.remoteOptions) {
+      remoteOptions.add(remoteOption);
+    }
+  }
+
+  return [...remoteOptions].sort();
 }
 
 export function getProfileView(searchId) {
