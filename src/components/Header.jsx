@@ -1,24 +1,21 @@
 import "../styles/Header.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <header id="header" style={{ padding: "16px" }}>
+      <Link to={""}>HOME (Should probably be "the logo")</Link>
+      <p>—</p>
       <nav>
         <ul>
           <li>
-            <NavLink to={`home`}>
-              Homepage (TEMPORARY, should be "default" route)
-            </NavLink>
+            <NavLink to={"about"}>Vad handledning är</NavLink>
           </li>
           <li>
-            <NavLink to={`about`}>Vad handledning är</NavLink>
+            <NavLink to={"contact"}>Kontakta oss</NavLink>
           </li>
           <li>
-            <NavLink to={`contact`}>Kontakta oss</NavLink>
-          </li>
-          <li>
-            <NavLink to={`gallery`}>Sök handledare</NavLink>
+            <NavLink to={"gallery"}>Sök handledare</NavLink>
           </li>
         </ul>
       </nav>
