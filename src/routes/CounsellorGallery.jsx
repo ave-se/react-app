@@ -99,7 +99,7 @@ const CounsellorGallery = () => {
 
       <div className="counsellor-gallery-cards-wrapper">
         {galleryItems.map((item) => (
-          <CounsellorCard key={item.id} showProfile={showProfile} {...item} />
+          <CounsellorCard key={item.id} {...item} />
         ))}
       </div>
     </div>
