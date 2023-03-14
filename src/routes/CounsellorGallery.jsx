@@ -63,19 +63,6 @@ const CounsellorGallery = () => {
           }}
         />
         <select
-          value={filterAreas}
-          onChange={(e) => {
-            setFilterAreas(e.target.value);
-          }}
-        >
-          <option value="">Specialområde</option>
-          {areasOptions.map((area, i) => (
-            <option key={i} value={area}>
-              {area}
-            </option>
-          ))}
-        </select>
-        <select
           value={filterLocations}
           onChange={(e) => {
             setFilterLocations(e.target.value);
@@ -85,6 +72,19 @@ const CounsellorGallery = () => {
           {locationsOptions.map((location, i) => (
             <option key={i} value={location}>
               {location}
+            </option>
+          ))}
+        </select>
+        <select
+          value={filterAreas}
+          onChange={(e) => {
+            setFilterAreas(e.target.value);
+          }}
+        >
+          <option value="">Specialområde</option>
+          {areasOptions.map((area, i) => (
+            <option key={i} value={area}>
+              {area}
             </option>
           ))}
         </select>
@@ -102,7 +102,7 @@ const CounsellorGallery = () => {
           ))}
         </select>
         <button type="button" onClick={clearFilters}>
-          Rensa filter
+          Rensa alla filter
         </button>
       </form>
 
