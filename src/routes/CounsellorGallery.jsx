@@ -32,7 +32,7 @@ const CounsellorGallery = () => {
     setGalleryItems(
       dummyData.getGalleryItems({
         areas: areasArray,
-        locations: locationsArray,
+        location: locationsArray,
         remoteOptions: remoteOptionsArray,
         freeText: filterFreeText,
       })
