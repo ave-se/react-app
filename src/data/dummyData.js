@@ -103,12 +103,12 @@ const dummyData = [
   },
   {
     id: 5,
-    firstName: "Anna",
+    firstName: "Leila",
     ratePerSession: 1500,
     location: "Stockholm",
     title: "Legitimierad psykoterapeut",
     avatarUrl:
-      "https://source.unsplash.com/random/500x500?professional?portrait",
+      "https://source.unsplash.com/random/501x500?professional?portrait",
     areas: [
       "Psykisk Ohälsa - Familj",
       "Barn",
@@ -130,12 +130,12 @@ const dummyData = [
   },
   {
     id: 6,
-    firstName: "Ave",
+    firstName: "Karl",
     ratePerSession: 2000,
     location: "Uppsala",
     title: "Socionom",
     avatarUrl:
-      "https://source.unsplash.com/random/500x501?professional?portrait",
+      "https://source.unsplash.com/random/502x500?professional?portrait",
     areas: [
       "Genusfrågor/HBTQ+",
       "Sjukvård",
@@ -157,12 +157,12 @@ const dummyData = [
   },
   {
     id: 7,
-    firstName: "Staffan",
+    firstName: "John",
     ratePerSession: 1800,
     location: "Stockholm",
     title: "Handledare",
     avatarUrl:
-      "https://source.unsplash.com/random/500x502?professional?portrait",
+      "https://source.unsplash.com/random/503x500?professional?portrait",
     areas: [
       "Missbruk",
       "Jourhem",
@@ -184,12 +184,12 @@ const dummyData = [
   },
   {
     id: 8,
-    firstName: "Samira",
+    firstName: "Sara",
     ratePerSession: 1500,
     location: "Göteborg",
     title: "Familjehemskonsulent",
     avatarUrl:
-      "https://source.unsplash.com/random/500x503?professional?portrait",
+      "https://source.unsplash.com/random/504x500?professional?portrait",
     areas: ["Relationsvåld", "Jourhem", "Socialtjänst", "Sjukvård", "Barn"],
     remoteOptions: ["Digitalt"],
     elevatorPitch:
@@ -205,12 +205,12 @@ const dummyData = [
   },
   {
     id: 9,
-    firstName: "Anna",
+    firstName: "Jenny",
     ratePerSession: 1500,
     location: "Stockholm",
     title: "Legitimierad psykoterapeut",
     avatarUrl:
-      "https://source.unsplash.com/random/500x500?professional?portrait",
+      "https://source.unsplash.com/random/504x504?professional?portrait",
     areas: [
       "Psykisk Ohälsa - Familj",
       "Barn",
@@ -232,12 +232,12 @@ const dummyData = [
   },
   {
     id: 10,
-    firstName: "Ave",
+    firstName: "Alexander",
     ratePerSession: 2000,
     location: "Uppsala",
     title: "Socionom",
     avatarUrl:
-      "https://source.unsplash.com/random/500x501?professional?portrait",
+      "https://source.unsplash.com/random/501x501?professional?portrait",
     areas: [
       "Genusfrågor/HBTQ+",
       "Sjukvård",
@@ -259,12 +259,12 @@ const dummyData = [
   },
   {
     id: 11,
-    firstName: "Staffan",
+    firstName: "Lisa",
     ratePerSession: 1800,
     location: "Stockholm",
     title: "Handledare",
     avatarUrl:
-      "https://source.unsplash.com/random/500x502?professional?portrait",
+      "https://source.unsplash.com/random/503x502?professional?portrait",
     areas: [
       "Missbruk",
       "Jourhem",
@@ -286,12 +286,12 @@ const dummyData = [
   },
   {
     id: 12,
-    firstName: "Samira",
+    firstName: "Sofia",
     ratePerSession: 1500,
     location: "Göteborg",
     title: "Familjehemskonsulent",
     avatarUrl:
-      "https://source.unsplash.com/random/500x503?professional?portrait",
+      "https://source.unsplash.com/random/502x503?professional?portrait",
     areas: ["Relationsvåld", "Jourhem", "Socialtjänst", "Sjukvård", "Barn"],
     remoteOptions: ["Digitalt"],
     elevatorPitch:
