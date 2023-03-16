@@ -5,7 +5,9 @@ import About from "./routes/About";
 import Contact from "./routes/Contact";
 import CounsellorGallery from "./routes/CounsellorGallery";
 import Homepage from "./routes/Homepage";
-import ProfileView from "./components/ProfileView";
+import ProfileView, {
+  loader as profileViewLoader,
+} from "./components/ProfileView";
 
 import "./index.css";
 import ErrorPage from "./error-page";
@@ -38,6 +40,7 @@ const router = createBrowserRouter([
       {
         path: "gallery/:profileId",
         element: <ProfileView />,
+        loader: profileViewLoader,
       },
     ],
   },
