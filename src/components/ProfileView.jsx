@@ -1,16 +1,18 @@
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLoaderData } from "react-router-dom";
 import * as dummyData from "../data/dummyDataAPI";
 import ScrollToTop from "../helpers/ScrollToTop";
 import Tag from "./Tag";
 
+export async function loader({ params }) {
+  const profile = await dummyData.getProfileView(Number(params.profileId));
+  return { profile };
+}
+
 const ProfileView = () => {
-  const { profileId } = useParams();
+  const { profile } = useLoaderData();
   const navigate = useNavigate();
 
-  const { areas, avatarUrl, ...item } = dummyData.getProfileView(
-    Number(profileId)
-  );
-
+  const { areas, avatarUrl, ...item } = profile;
   //TODO: item should probably be properly destructured...
 
   return (

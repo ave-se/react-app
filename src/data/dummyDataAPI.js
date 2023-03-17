@@ -1,6 +1,6 @@
 import data from "./dummyData";
 
-export function getGalleryItems(filter) {
+export async function getGalleryItems(filter) {
   filter = {
     areas: [],
     location: [],
@@ -28,31 +28,22 @@ export function getGalleryItems(filter) {
   // filter: remote or on site sessions
   if (filter.remoteOptions.length > 0) {
     filteredData = filteredData.filter((entry) =>
-      filter.remoteOptions.every((remoteOption) => entry.remoteOptions.includes(remoteOption))
+      filter.remoteOptions.every((remoteOption) =>
+        entry.remoteOptions.includes(remoteOption)
+      )
     );
   }
 
   //filter: freeText
   //todo: should look at full name as well...
   if (filter.freeText) {
-    filteredData = filteredData.filter(
-      (entry) =>
-        entry.firstName
-          .toLowerCase()
-          .startsWith(filter.freeText.toLowerCase())
+    filteredData = filteredData.filter((entry) =>
+      entry.firstName.toLowerCase().startsWith(filter.freeText.toLowerCase())
     );
   }
 
   return filteredData.map(
-    ({
-      firstName,
-      ratePerSession,
-      avatarUrl,
-      areas,
-      title,
-      location,
-      id,
-    }) => ({
+    ({ firstName, ratePerSession, avatarUrl, areas, title, location, id }) => ({
       firstName,
       ratePerSession,
       avatarUrl,
@@ -64,7 +55,7 @@ export function getGalleryItems(filter) {
   );
 }
 
-export function getAllUniqueAreas() {
+export async function getAllUniqueAreas() {
   const areas = new Set();
 
   for (let entry of data) {
@@ -76,7 +67,7 @@ export function getAllUniqueAreas() {
   return [...areas].sort();
 }
 
-export function getAllUniqueLocations() {
+export async function getAllUniqueLocations() {
   const locations = new Set();
 
   for (let entry of data) {
@@ -86,7 +77,7 @@ export function getAllUniqueLocations() {
   return [...locations].sort();
 }
 
-export function getAllUniqueRemoteOptions() {
+export async function getAllUniqueRemoteOptions() {
   const remoteOptions = new Set();
 
   for (let entry of data) {
@@ -98,6 +89,6 @@ export function getAllUniqueRemoteOptions() {
   return [...remoteOptions].sort();
 }
 
-export function getProfileView(searchId) {
+export async function getProfileView(searchId) {
   return data.find(({ id }) => id === searchId);
 }
