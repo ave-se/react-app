@@ -1,18 +1,20 @@
 .about-wrapper h2 {
 	font-size: var(--40px);
-	margin: 1rem 1.5rem;
+}
+
+.about-wrapper .about-first-title {
+	margin-top: 6rem;
 }
 
 .about-wrapper p {
 	font-size: var(--20px);
-	font-weight: 400;
-	margin: 1rem;
+	margin: var(--20px);
 }
 
 .about-wrapper label {
 	display: flex;
 	justify-content: space-between;
-	padding: 0rem 1rem;
+	padding: 1rem 2rem;
 }
 
 input[type='checkbox'] {
@@ -40,4 +42,18 @@ input[type='checkbox'] {
 
 .toggle:checked + .lbl-toggle + .collapsible-content {
   max-height: 100vh;
+}
+
+@media screen and (max-width: 414px) {
+	.about-wrapper h2 {
+		font-size: var(--16px);
+	}
+	.about-wrapper p {
+		font-size: var(--12px);
+		margin: var(--12px);
+	}
+
+	.lbl-toggle img {
+		width: var(--16px);
+	}
 }
