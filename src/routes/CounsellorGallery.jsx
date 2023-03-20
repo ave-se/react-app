@@ -89,6 +89,19 @@ const CounsellorGallery = () => {
     <div className="counsellor-gallery-wrapper">
       <h2>Hitta handledare över hela Sverige!</h2>
       <Form id="search-form" role="search" onSubmit={(e) => {}}>
+        {searchIsActive && (
+          <Link
+            className="clear-filters"
+            to=".."
+            relative="path"
+            onClick={(e) => {
+              e.preventDefault();
+              clearFilters();
+            }}
+          >
+            Rensa alla filter
+          </Link>
+        )}
         <input
           name="filterFreeText"
           placeholder="Sök..."
@@ -143,18 +156,6 @@ const CounsellorGallery = () => {
             </option>
           ))}
         </select>
-        {searchIsActive && (
-          <Link
-            to=".."
-            relative="path"
-            onClick={(e) => {
-              e.preventDefault();
-              clearFilters();
-            }}
-          >
-            Rensa alla filter
-          </Link>
-        )}
       </Form>
 
       <div className="counsellor-gallery-cards-wrapper">
