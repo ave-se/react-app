@@ -179,4 +179,20 @@ background: #FFFFFF;
 border-radius: 20px;
 }
  
+/* 53 */
+.number53 {
+width: 42px;
+height: 50px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 50px;
+color: #000000;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
 
+/* Registrerade Handledare att välja mellan */
