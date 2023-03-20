@@ -1,3 +1,20 @@
+.about-wrapper h2 {
+	font-size: var(--40px);
+	margin: 1rem 1.5rem;
+}
+
+.about-wrapper p {
+	font-size: var(--2px);
+	font-weight: 400;
+	margin: 1rem;
+}
+
+.about-wrapper label {
+	display: flex;
+	justify-content: space-between;
+	padding: 0rem 1rem;
+}
+
 input[type='checkbox'] {
   display: none;
 }
@@ -5,12 +22,20 @@ input[type='checkbox'] {
 .collapsible-content {
   max-height: 0px;
   overflow: hidden;
-
   transition: max-height .25s ease-in-out;
+}
+
+.content-inner {
+	border-top: 1px solid black;
 }
 
 .lbl-toggle {
 	cursor: pointer;
+}
+
+.collapsible-content {
+	/* margin: 0.5rem; */
+	border-bottom: 1px solid black;
 }
 
 .toggle:checked + .lbl-toggle + .collapsible-content {

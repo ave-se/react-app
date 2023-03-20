@@ -19,9 +19,9 @@ const About = () => {
   }, []);
 
   return (
-    <div className="about-collapsible-wrap">
+    <div className="about-wrapper">
       <input id="collapsible1" className="toggle" type="checkbox"/>
-      <label htmlFor="collapsible1" className="lbl-toggle" tabIndex="0">Vad är handledning<img src={chevron} alt="" /></label>
+      <label htmlFor="collapsible1" className="lbl-toggle" tabIndex="0"><h2>Vad är handledning</h2><img src={chevron} alt="" /></label>
       <div className="collapsible-content">
         <div className="content-inner">
           <p>
@@ -49,7 +49,7 @@ const About = () => {
         </div>
       </div>
       <input id="collapsible2" className="toggle" type="checkbox"/>
-      <label htmlFor="collapsible2" className="lbl-toggle" tabIndex="0">Hur handledning går till<img src={chevron} alt="" /></label>
+      <label htmlFor="collapsible2" className="lbl-toggle" tabIndex="0"><h2>Hur handledning går till</h2><img src={chevron} alt="" /></label>
       <div className="collapsible-content">
         <div className="content-inner">
           <p>
@@ -74,7 +74,7 @@ const About = () => {
         </div>
       </div>
       <input id="collapsible3" className="toggle" type="checkbox"/>
-      <label htmlFor="collapsible3" className="lbl-toggle" tabIndex="0">För vem passar handledning<img src={chevron} alt="" /></label>
+      <label htmlFor="collapsible3" className="lbl-toggle" tabIndex="0"><h2>För vem passar handledning</h2><img src={chevron} alt="" /></label>
       <div className="collapsible-content">
         <div className="content-inner">
           <p>
@@ -105,7 +105,7 @@ const About = () => {
         </div>
       </div>
       <input id="collapsible4" className="toggle" type="checkbox"/>
-      <label htmlFor="collapsible4" className="lbl-toggle" tabIndex="0">Handledarens roll och pris<img src={chevron} alt="" /></label>
+      <label htmlFor="collapsible4" className="lbl-toggle" tabIndex="0"><h2>Handledarens roll och pris</h2><img src={chevron} alt="" /></label>
       <div className="collapsible-content">
         <div className="content-inner">
           <p>
