@@ -43,3 +43,16 @@ bottom: -10%;
 transform: rotate(-90deg);
 }
 
+/* image 4 */
+.image4 {
+position: absolute;
+width: 1512px;
+height: 608px;
+left: 0px;
+top: 0px;
+
+background: #301B08;
+mix-blend-mode: darken;
+opacity: 0.12;}
+
+
