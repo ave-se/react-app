@@ -44,6 +44,7 @@
   background-color: var(--color-teal-20);
   color: var(--color-black-100);
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
 }
 
 /* main page stuff */
