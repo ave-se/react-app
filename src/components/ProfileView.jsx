@@ -31,16 +31,6 @@ const ProfileView = () => {
   return (
     <>
       <ScrollToTop />
-      <Link
-        to=".."
-        relative="path"
-        onClick={(e) => {
-          e.preventDefault();
-          navigate(-1);
-        }}
-      >
-        {"<<< BACK!"}
-      </Link>
 
       <div className="ProfileView__columns">
         <div className="ProfileView__columns__left">
