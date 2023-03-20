@@ -55,4 +55,210 @@ background: #301B08;
 mix-blend-mode: darken;
 opacity: 0.12;}
 
+/* Hitta handledare över hela Sverige */
+.hittaHandledareText {
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
 
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 80px;
+color: #FFFFFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+
+/* Rectangle 112 */
+.rectangle112 {
+position: absolute;
+width: 8px;
+height: 8px;
+left: 740px;
+top: 592px;
+
+background: #D9D9D9;
+border-radius: 12px;}
+
+/* Rectangle 113 */
+.rectangle113 {
+position: absolute;
+width: 8px;
+height: 8px;
+left: 752px;
+top: 592px;
+
+background: #D9D9D9;
+opacity: 0.4;
+border-radius: 12px;}
+ 
+/* Rectangle 114 */
+.rectangle114 {
+position: absolute;
+width: 8px;
+height: 8px;
+left: 764px;
+top: 592px;
+
+background: #D9D9D9;
+opacity: 0.4;
+border-radius: 12px;
+}
+
+/* Sub banner */
+/* Auto layout */
+.subBanner {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 124px;
+gap: 10px;
+width: 1512px;
+height: 320px;
+
+/* Teal/20% */
+background: #E1EFEF;
+box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 3;}
+
+/* Frame 104 */
+/* Auto layout */
+.frame104 {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 12px 16px;
+gap: 10px;
+width: 680px;
+height: 84px;
+background: #FFFFFF;
+border-radius: 16px;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* Läs mer om vad handledning är och varför det ger utveckling. I vår handledarförteckning hittar ni enkelt er nästa handledare. */
+.lasMerOm {
+width: 648px;
+height: 60px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;}
+
+.frame98 {
+ /* Frame 98 */
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px;
+gap: 10px;
+position: absolute;
+width: 368px;
+height: 112px;
+left: 224px;
+top: 128px;
+background: #FFFFFF;
+border-radius: 20px;
+}
+ 
+/* 53 */
+.number53 {
+width: 42px;
+height: 50px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 50px;
+color: #000000;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* Registrerade Handledare att välja mellan */
+.registreradeHandledare {
+width: 272px;
+height: 20px;
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #000000;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;}
+
+.frame101 {
+ /* Frame 101 */
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px;
+gap: 10px;
+position: absolute;
+width: 368px;
+height: 112px;
+left: 672px;
+top: 128px;
+background: #FFFFFF;
+border-radius: 20px;
+
+}
+
+/* 100% */
+.oneHundredPercent
+{
+width: 96px;
+height: 50px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 50px;
+color: #000000;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;}
+
+/* Av Svergies olika län */
+.avSverigiesOlika {
+
+width: 135px;
+height: 20px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #000000;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow:0;}
+
+ 
