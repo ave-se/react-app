@@ -212,7 +212,7 @@ order: 1;
 flex-grow: 0;}
 
 .frame101 {
- /* Frame 98 */
+ /* Frame 101 */
 /* Auto layout */
 display: flex;
 flex-direction: column;
@@ -222,9 +222,10 @@ gap: 10px;
 position: absolute;
 width: 368px;
 height: 112px;
-left: 224px;
+left: 672px;
 top: 128px;
 background: #FFFFFF;
 border-radius: 20px;
+
 }
 
