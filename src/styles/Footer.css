@@ -1,0 +1,10 @@
+#footer {
+  width: 100%;
+  background-color: var(--color-grey-100);
+
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+
+  color: var(--color-grey-20);
+}

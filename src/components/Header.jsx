@@ -3,9 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header id="header" style={{ padding: "16px" }}>
-      <Link to={""}>HOME (Should probably be "the logo")</Link>
-      <p>—</p>
+    <header id="header">
+      <Link to={""}>LOGO!</Link>
       <nav>
         <ul>
           <li>
@@ -15,7 +14,9 @@ const Header = () => {
             <NavLink to={"contact"}>Kontakta oss</NavLink>
           </li>
           <li>
-            <NavLink to={"gallery"}>Sök handledare</NavLink>
+            <NavLink to={"gallery"} className="button">
+              Sök handledare
+            </NavLink>
           </li>
         </ul>
       </nav>

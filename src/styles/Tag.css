@@ -1,13 +1,13 @@
 .tag-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .tag {
-	background-color: #A5D0D0;
-	color: #3A3A3A;
-	border-radius: 16px;
-	padding: 0.25rem 1rem;
-	font-size: 0.75rem;
+  background-color: var(--color-teal-60);
+  color: var(--color-black-100);
+  border-radius: 10rem;
+  padding: 0.25rem 1rem;
+  font-size: var(--12px);
 }

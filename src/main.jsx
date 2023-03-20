@@ -11,7 +11,7 @@ import ProfileView, {
   loader as profileViewLoader,
 } from "./components/ProfileView";
 
-import "./index.css";
+import "./main.css";
 import ErrorPage from "./error-page";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 

@@ -1,0 +1,115 @@
+:root {
+  /* colors */
+  --color-white: #ffffff;
+
+  --color-original-teal: #cee6e6;
+  --color-dark-green: #3f6a6a;
+  --color-grey-100: #323131;
+  --color-grey-80: #535252;
+  --color-grey-60: #989797;
+  --color-grey-40: #bababa;
+  --color-grey-20: #dddcdc;
+  --color-black-100: #000;
+  --color-teal-100: #3f6a6a;
+  --color-teal-80: #69b1b0;
+  --color-teal-60: #a5d0d0;
+  --color-teal-40: #c3e0df;
+  --color-teal-20: #e1efef;
+  --color-red-100: #620a01;
+  --color-red-80: #a41002;
+  --color-red-60: #c87067;
+  --color-red-40: #db9f9a;
+  --color-red-20: #edcfcc;
+
+  /* sizes */
+  --4px: calc(4 / 16 * 1rem);
+  --10px: calc(10 / 16 * 1rem);
+  --12px: calc(12 / 16 * 1rem);
+  --14px: calc(14 / 16 * 1rem);
+  --16px: calc(16 / 16 * 1rem);
+  --18px: calc(18 / 16 * 1rem);
+  --20px: calc(20 / 16 * 1rem);
+  --22px: calc(22 / 16 * 1rem);
+  --24px: calc(24 / 16 * 1rem);
+
+  /* misc */
+  --header-height: calc(88 / 16 * 1rem);
+  --page-max-width: 1240px;
+
+  /* "defaults" */
+  background-color: var(--color-teal-20);
+  color: var(--color-black-100);
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* global stuff */
+#wrapper {
+  /* wraps the content and the footer*/
+  /* min-height to make the content fill at least the whole screen*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content-wrapper {
+  /* flex-grow to make the content fill at least the whole screen*/
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#content-wrapper--max-width {
+  /* padding-top to compensate for the header*/
+  padding-top: var(--header-height);
+  width: 100%;
+  max-width: var(--page-max-width);
+  background-color: var(--color-white);
+}
+
+#content {
+  padding: var(--24px);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-grey-60);
+}
+
+a.active {
+  color: var(--color-red-80);
+}
+
+a.pending {
+  color: var(--color-red-40);
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: var(--4px) var(--16px);
+  gap: var(--10px);
+
+  background: var(--color-teal-80);
+  border-radius: 10rem;
+}
+
+.button:hover {
+  color: unset;
+  background: var(--color-teal-40);
+}
+
+.button.active {
+  color: var(--color-teal-20);
+  background: var(--color-red-80);
+}
+
+.button.pending {
+  color: unset;
+  background: var(--color-red-40);
+}

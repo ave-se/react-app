@@ -1,42 +1,41 @@
 .counsellor-gallery-wrapper {
-	margin: 0rem 11.25rem;
 }
 
 .counsellor-gallery-cards-wrapper {
-	display: grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	column-gap: 4rem;
-	row-gap: 2.875rem;
-	margin-top: 7.75rem;
+  column-gap: 4rem;
+  row-gap: 2.875rem;
+  margin-top: 7.75rem;
 }
 
 .counsellor-gallery-cards-wrapper button {
-	border: none;
-	background: none;
-	color: #323131;
-	font-size: 0.75rem;
-	text-decoration: underline;
-	margin: 0.5rem 0;
+  border: none;
+  background: none;
+  color: #323131;
+  font-size: 0.75rem;
+  text-decoration: underline;
+  margin: 0.5rem 0;
 }
 
 h2 {
-	font-weight: 600;
-	font-size: 2.5rem;
-	margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 form {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	padding: 0px;
-	gap: 16px;
-	font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  font-size: 1.25rem;
 }
 
 select {
-	padding: 4px 12px 4px 36px;
-	gap: 12px;
-	border: 1px solid black;
-	border-radius: 16px;
+  padding: 4px 12px 4px 36px;
+  gap: 12px;
+  border: 1px solid black;
+  border-radius: 16px;
 }
