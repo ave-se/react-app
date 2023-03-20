@@ -21,6 +21,7 @@
   --color-red-20: #edcfcc;
 
   /* sizes */
+  --1px: calc(1 / 16 * 1rem);
   --2px: calc(2 / 16 * 1rem);
   --4px: calc(4 / 16 * 1rem);
   --8px: calc(8 / 16 * 1rem);

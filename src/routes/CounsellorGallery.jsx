@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import * as dummyData from "../data/dummyDataAPI";
 import CounsellorCard from "../components/CounsellorCard";
+import Select from "../components/Select";
+
 import {
   Form,
   useLoaderData,
@@ -115,9 +117,7 @@ const CounsellorGallery = () => {
       <Form id="search-form" role="search" onSubmit={(e) => {}}>
         <div className="inputs-wrapper">
           <div className="input_with_label">
-            <label htmlFor="filterFreeText">
-              <img src={iconSearch} alt="search icon"></img>
-            </label>
+            <img src={iconSearch} alt="search icon"></img>
             <input
               id="filterFreeText"
               name="filterFreeText"
@@ -129,7 +129,7 @@ const CounsellorGallery = () => {
               }}
             />
           </div>
-          <select
+          <Select
             name="filterLocations"
             value={filterLocations}
             onChange={(e) => {
@@ -143,8 +143,8 @@ const CounsellorGallery = () => {
                 {location}
               </option>
             ))}
-          </select>
-          <select
+          </Select>
+          <Select
             name="filterAreas"
             value={filterAreas}
             onChange={(e) => {
@@ -158,8 +158,8 @@ const CounsellorGallery = () => {
                 {area}
               </option>
             ))}
-          </select>
-          <select
+          </Select>
+          <Select
             name="filterRemoteOptions"
             value={filterRemoteOptions}
             onChange={(e) => {
@@ -173,7 +173,7 @@ const CounsellorGallery = () => {
                 {remoteOption}
               </option>
             ))}
-          </select>
+          </Select>
         </div>
 
         <div className="clear-filters">
