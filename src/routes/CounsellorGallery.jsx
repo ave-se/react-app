@@ -11,6 +11,8 @@ import {
 
 import "../styles/CounsellorGallery.css";
 
+import iconSearch from "../assets/icon_search.svg";
+
 export async function loader({ request }) {
   const makeSearchArray = (param) => {
     //the api expects an array. Null or empty string should return empty array
@@ -102,15 +104,22 @@ const CounsellorGallery = () => {
             Rensa alla filter
           </Link>
         )}
-        <input
-          name="filterFreeText"
-          placeholder="Sök..."
-          value={filterFreeText}
-          onChange={(e) => {
-            setFilterFreeText(e.target.value);
-            submitOnChange(e.target.form);
-          }}
-        />
+
+        <div className="input_with_label">
+          <label htmlFor="filterFreeText">
+            <img src={iconSearch} alt="search icon"></img>
+          </label>
+          <input
+            id="filterFreeText"
+            name="filterFreeText"
+            placeholder="Sök..."
+            value={filterFreeText}
+            onChange={(e) => {
+              setFilterFreeText(e.target.value);
+              submitOnChange(e.target.form);
+            }}
+          />
+        </div>
         <select
           name="filterLocations"
           value={filterLocations}
