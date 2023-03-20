@@ -339,3 +339,20 @@ top: 80px;
 background: #A5D0D0;
 border-radius: 20px;
 }
+/* Sök efter handledare som passar just dina behov! */
+.SökEfterHandledare{
+
+width: 277px;
+height: 50px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+text-decoration-line: underline;
+color: #000000;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;}
