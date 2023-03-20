@@ -317,4 +317,25 @@ flex: none;
 order: 0;
 flex-grow: 0;
 }
- 
+/* Frame 98 */
+.frame98{
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 16px;
+gap: 10px;
+
+position: absolute;
+width: 368px;
+height: 112px;
+left: 124px;
+top: 80px;
+
+/* Teal/60% */
+
+background: #A5D0D0;
+border-radius: 20px;
+}
