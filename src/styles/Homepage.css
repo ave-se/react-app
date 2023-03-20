@@ -33,3 +33,13 @@ bottom: 50%;
 transform: rotate(90deg);
 }
 
+/* Vector Right of image 4 */
+.vectorRight {
+ position: absolute;
+left: 37.5%;
+right: 2.5%;
+top: 80%;
+bottom: -10%;
+transform: rotate(-90deg);
+}
+
