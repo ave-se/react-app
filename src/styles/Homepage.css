@@ -261,4 +261,15 @@ flex: none;
 order: 1;
 flex-grow:0;}
 
+/* image 4 */
+.image4{
+
+position: absolute;
+width: 1512px;
+height: 160px;
+left: 0px;
+top: 1016px;
+background: url(image.png);
+}
+
  
