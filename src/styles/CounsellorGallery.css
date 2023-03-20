@@ -1,8 +1,32 @@
-.counsellor-gallery-wrapper {
+.counsellor-gallery-wrapper h2 {
+  font-size: var(--40px);
+}
+
+.counsellor-gallery-wrapper .hero {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.counsellor-gallery-wrapper .hero .col-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.counsellor-gallery-wrapper .hero .col-2 > * {
+  width: 50%;
+  padding: var(--32px);
+}
+
+.counsellor-gallery-wrapper .hero .row-2 {
+  display: flex;
+  flex-direction: column;
 }
 
 .counsellor-gallery-wrapper form {
-  position: relative;
+  margin: var(--16px) 0;
+}
+
+.counsellor-gallery-wrapper .inputs-wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -12,9 +36,8 @@
 }
 
 .counsellor-gallery-wrapper .clear-filters {
-  position: absolute;
-  left: 0;
   top: var(--32px);
+  font-size: var(--16px);
 }
 
 .counsellor-gallery-wrapper .input_with_label {
