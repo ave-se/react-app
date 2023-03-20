@@ -375,3 +375,26 @@ top: 80px;
 /* Teal/60% */
 background: #A5D0D0;
 border-radius: 20px;}
+
+/* Hitta mer information om vad Handledning är, och varför det passar just dig */
+
+.HittaMerInformation{
+width: 316px;
+height: 75px;
+
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;}
