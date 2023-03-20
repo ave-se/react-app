@@ -31,6 +31,9 @@
   --20px: calc(20 / 16 * 1rem);
   --22px: calc(22 / 16 * 1rem);
   --24px: calc(24 / 16 * 1rem);
+  --28px: calc(28 / 16 * 1rem);
+  --32px: calc(32 / 16 * 1rem);
+  --40px: calc(40 / 16 * 1rem);
 
   /* misc */
   --header-height: calc(88 / 16 * 1rem);
@@ -42,7 +45,7 @@
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* global stuff */
+/* main page stuff */
 #wrapper {
   /* wraps the content and the footer*/
   /* min-height to make the content fill at least the whole screen*/
@@ -68,6 +71,31 @@
 
 #content {
   padding: var(--24px);
+}
+
+/* "global styles */
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--40px);
+}
+
+h2 {
+  font-size: var(--32px);
+}
+
+h3 {
+  font-size: var(--28px);
+}
+
+h4 {
+  font-size: var(--24px);
 }
 
 a {
