@@ -12,23 +12,43 @@ const ProfileView = () => {
   const { profile } = useLoaderData();
   const navigate = useNavigate();
 
-  const { areas, avatarUrl, ...item } = profile;
+  const {
+    elevatorPitch,
+    aboutMe,
+    occupationalBackground,
+    methods,
+    personality,
+    areas,
+    avatarUrl,
+    ...item
+  } = profile;
   //TODO: item should probably be properly destructured...
 
   return (
     <>
       <ScrollToTop />
+      <Link
+        to=".."
+        relative="path"
+        onClick={(e) => {
+          e.preventDefault();
+          navigate(-1);
+        }}
+      >
+        {"<<< BACK!"}
+      </Link>
       <div>
-        <Link
-          to=".."
-          relative="path"
-          onClick={(e) => {
-            e.preventDefault();
-            navigate(-1);
-          }}
-        >
-          {"<<< BACK!"}
-        </Link>
+        <h3 className="all-caps">Sammanfattning</h3>
+        <p>{elevatorPitch}</p>
+        <h4 className="all-caps">Om mig</h4>
+        <p>{aboutMe}</p>
+        <h4 className="all-caps">Yrkesbakgrund</h4>
+        <p>{occupationalBackground}</p>
+        <h4 className="all-caps">Metoder, Struktur och Tillvägagångssätt</h4>
+        <p>{methods}</p>
+        <h4 className="all-caps">Hur kan jag upplevas som handledare?</h4>
+        <p>{personality}</p>
+
         <img src={avatarUrl} alt="" />
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: "4px" }}>

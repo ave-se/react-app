@@ -71,6 +71,7 @@
 
 #content {
   padding: var(--24px);
+  font-size: var(--24px);
 }
 
 /* "global styles */
@@ -101,6 +102,10 @@ h4 {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.all-caps {
+  text-transform: uppercase;
 }
 
 a:hover {
