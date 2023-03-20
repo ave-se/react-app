@@ -1,7 +1,4 @@
 import "../styles/Homepage.css";
-const Homepage = () => {
-  return <h2>"Homepage"</h2>;
-};
 
 function HomePage() {
   return (
