@@ -43,7 +43,7 @@ export async function getGalleryItems(filter) {
   }
 
   return filteredData.map(
-    ({ firstName, ratePerSession, avatarUrl, areas, title, location, id }) => ({
+    ({
       firstName,
       ratePerSession,
       avatarUrl,
@@ -51,6 +51,16 @@ export async function getGalleryItems(filter) {
       title,
       location,
       id,
+      elevatorPitch,
+    }) => ({
+      firstName,
+      ratePerSession,
+      avatarUrl,
+      areas,
+      title,
+      location,
+      id,
+      elevatorPitch,
     })
   );
 }

@@ -21,7 +21,9 @@
   --color-red-20: #edcfcc;
 
   /* sizes */
+  --2px: calc(2 / 16 * 1rem);
   --4px: calc(4 / 16 * 1rem);
+  --8px: calc(8 / 16 * 1rem);
   --10px: calc(10 / 16 * 1rem);
   --12px: calc(12 / 16 * 1rem);
   --14px: calc(14 / 16 * 1rem);
@@ -69,7 +71,7 @@
 }
 
 #content {
-  padding: var(--24px);
+  padding: var(--32px);
   font-size: var(--24px);
 }
 

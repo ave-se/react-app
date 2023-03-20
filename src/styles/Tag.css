@@ -1,9 +1,3 @@
-.tag-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
 .tag {
   background-color: var(--color-teal-60);
   color: var(--color-black-100);

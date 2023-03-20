@@ -1,24 +1,7 @@
 .counsellor-gallery-wrapper {
 }
 
-.counsellor-gallery-cards-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  column-gap: 4rem;
-  row-gap: 2.875rem;
-  margin-top: 7.75rem;
-}
-
-.counsellor-gallery-cards-wrapper button {
-  border: none;
-  background: none;
-  color: #323131;
-  font-size: 0.75rem;
-  text-decoration: underline;
-  margin: 0.5rem 0;
-}
-
-form {
+.counsellor-gallery-wrapper form {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,9 +10,16 @@ form {
   font-size: 1.25rem;
 }
 
-select {
+.counsellor-gallery-wrapper select {
   padding: 4px 12px 4px 36px;
   gap: 12px;
   border: 1px solid black;
   border-radius: 16px;
+}
+
+.counsellor-gallery-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--32px);
+  margin-top: 2rem;
 }
