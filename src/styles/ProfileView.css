@@ -1,0 +1,43 @@
+.ProfileView__columns {
+  display: flex;
+  gap: 16px;
+}
+
+.ProfileView__columns__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--20px);
+
+  min-width: 380px;
+  /* width: 380px; */
+}
+
+.ProfileView__columns__left .title {
+  font-size: var(--20px);
+  color: var(--color-grey-80);
+}
+
+.ProfileView__columns__left .value {
+  color: var(--color-teal-100);
+}
+
+.ProfileView__columns__left img {
+  width: 260px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.ProfileView__block {
+  margin-bottom: 60px;
+}
+
+.ProfileView__tags-container {
+  padding: 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-top: solid 1px var(--color-grey-60);
+  border-bottom: solid 1px var(--color-grey-60);
+}

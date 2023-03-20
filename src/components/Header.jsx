@@ -15,7 +15,7 @@ const Header = () => {
             <NavLink to={"contact"}>Kontakta oss</NavLink>
           </li>
           <li>
-            <NavLink to={"gallery"} className="button">
+            <NavLink to={"gallery"} className="button button--tight">
               Sök handledare
             </NavLink>
           </li>
