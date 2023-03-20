@@ -25,6 +25,6 @@
   font-weight: 600;
 }
 
-.logo {
+#header .logo {
   width: 25.75rem;
-}
+ }
