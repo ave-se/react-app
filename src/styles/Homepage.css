@@ -8,3 +8,18 @@ top: 0px;
 
 background: #FFFFFF;
 opacity: 0.5;}
+
+
+/* Rectangle 111 containing vector right */
+.rectangle111 {
+position: absolute;
+width: 60px;
+height: 608px;
+left: 1512px;
+top: 608px;
+
+background: #FFFFFF;
+opacity: 0.5;
+transform: rotate(-180deg);
+}
+
