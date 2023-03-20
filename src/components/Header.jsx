@@ -1,10 +1,11 @@
 import "../styles/Header.css";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../assets/logo.svg"
 
 const Header = () => {
   return (
     <header id="header">
-      <Link to={""}>LOGO!</Link>
+      <Link to={""}><img src={logo} className="logo"></img></Link>
       <nav>
         <ul>
           <li>

@@ -23,3 +23,7 @@
   font-size: var(--20px);
   font-weight: 600;
 }
+
+.logo {
+ width: 25.75rem;
+}
