@@ -1,27 +1,14 @@
 import "../styles/Homepage.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-
-function HomePage() {
-  const unsplashUrl = 'https://source.unsplash.com/random/1512x608';
-
+import navIcon from "../assets/nav-icon.svg";
+const Homepage = () => {
   return (
-    <div className="container position-relative">
-      <img
-        src={unsplashUrl}
-        alt="Hero"
-        className="w-100"
-      />
-      <div className="position-absolute w-100 h-100 d-flex align-items-center justify-content-between">
-        <button className="btn btn-link text-white">
-          <FontAwesomeIcon icon={faChevronLeft} />
-        </button>
-        <button className="btn btn-link text-white">
-          <FontAwesomeIcon icon={faChevronRight} />
-        </button>
-      </div>
+    <div className="home-page" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')` }}>
+      <h1>Hitta handledare över hela Sverige</h1>
+       <img src={navIcon} alt="Left Icon" className="left-button" />
+     <img src={navIcon} alt="Right Icon" className="right-button" />
     </div>
   );
-}
+};
 
-export default HomePage;
+export default Homepage;
+
