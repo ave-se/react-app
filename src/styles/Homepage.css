@@ -245,5 +245,20 @@ flex: none;
 order: 0;
 flex-grow: 0;}
 
+/* Av Svergies olika län */
+.avSverigiesOlika {
+
+width: 135px;
+height: 20px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #000000;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow:0;}
 
  
