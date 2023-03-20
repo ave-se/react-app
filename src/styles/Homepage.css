@@ -107,3 +107,26 @@ opacity: 0.4;
 border-radius: 12px;
 }
 
+/* Sub banner */
+/* Auto layout */
+.subBanner {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 124px;
+gap: 10px;
+width: 1512px;
+height: 320px;
+
+/* Teal/20% */
+background: #E1EFEF;
+box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 3;}
+
+
+ 
