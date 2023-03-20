@@ -23,3 +23,13 @@ opacity: 0.5;
 transform: rotate(-180deg);
 }
 
+ /* Vector Left of image 4 */
+.vectorLeft {
+position: absolute;
+left: 62.5%;
+right: -22.5%;
+top: 20%;
+bottom: 50%;
+transform: rotate(90deg);
+}
+
