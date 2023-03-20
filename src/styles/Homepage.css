@@ -146,3 +146,19 @@ order: 0;
 flex-grow: 0;
 }
 
+/* Läs mer om vad handledning är och varför det ger utveckling. I vår handledarförteckning hittar ni enkelt er nästa handledare. */
+.lasMerOm {
+width: 648px;
+height: 60px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+color: #000000;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;}
+
