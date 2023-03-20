@@ -82,3 +82,15 @@ top: 592px;
 background: #D9D9D9;
 border-radius: 12px;}
 
+/* Rectangle 113 */
+.rectangle113 {
+position: absolute;
+width: 8px;
+height: 8px;
+left: 752px;
+top: 592px;
+
+background: #D9D9D9;
+opacity: 0.4;
+border-radius: 12px;}
+ 
