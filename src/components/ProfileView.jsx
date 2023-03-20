@@ -44,7 +44,7 @@ const ProfileView = () => {
             Format: <span className="value">{remoteOptions.join(" och ")}</span>
           </p>
           <p>
-            Pris: <span className="value">{ratePerSession}kr/timme</span>
+            Pris: <span className="value">{ratePerSession} kr/timme</span>
           </p>
           <div>
             <a className="button all-caps">Kontakta mig</a>
