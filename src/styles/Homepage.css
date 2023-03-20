@@ -1,26 +1,58 @@
-/* mainHeader Handledning.se */
-
-
-/* Auto layout */
-.mainHeader {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 8px 0px;
-gap: 331px;
-
-width: 1512px;
-height: 88px;
+ /* Rectangle 111 containing vector left*/
+.rectangle111 {
+position: absolute;
+width: 60px;
+height: 608px;
+left: 0px;
+top: 0px;
 
 background: #FFFFFF;
-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+opacity: 0.5;}
 
-/* Inside auto layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
-z-index: 5;}
+/* Rectangle 111 containing vector right */
+.rectangle111 {
+position: absolute;
+width: 60px;
+height: 608px;
+left: 1512px;
+top: 608px;
+
+background: #FFFFFF;
+opacity: 0.5;
+transform: rotate(-180deg);
+}
+
+ /* Vector Left of image 4 */
+.vectorLeft {
+position: absolute;
+left: 62.5%;
+right: -22.5%;
+top: 20%;
+bottom: 50%;
+transform: rotate(90deg);
+}
+
+/* Vector Right of image 4 */
+.vectorRight {
+ position: absolute;
+left: 37.5%;
+right: 2.5%;
+top: 80%;
+bottom: -10%;
+transform: rotate(-90deg);
+}
+
+/* image 4 */
+.image4 {
+position: absolute;
+width: 1512px;
+height: 608px;
+left: 0px;
+top: 0px;
+
+background: #301B08;
+mix-blend-mode: darken;
+opacity: 0.12;}
 
 
