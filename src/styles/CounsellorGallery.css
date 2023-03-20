@@ -96,6 +96,10 @@
 }
 
 .counsellor-gallery-cards-wrapper {
+  min-height: 100vh;
+}
+
+.counsellor-gallery-cards-wrapper .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: var(--32px);

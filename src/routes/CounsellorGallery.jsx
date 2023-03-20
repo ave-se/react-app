@@ -195,9 +195,11 @@ const CounsellorGallery = () => {
       </Form>
 
       <div className="counsellor-gallery-cards-wrapper">
-        {galleryItems.map((item) => (
-          <CounsellorCard key={item.id} {...item} />
-        ))}
+        <div className="grid">
+          {galleryItems.map((item) => (
+            <CounsellorCard key={item.id} {...item} />
+          ))}
+        </div>
       </div>
     </div>
   );
