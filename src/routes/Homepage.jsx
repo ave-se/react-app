@@ -53,7 +53,9 @@ function Homepage() {
       </div>
       <div className="section">
         
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p><a>Hitta mer information om vad
+Handledning är, och varför det passar 
+just dig</a></p>
       </div>
       <div className="section">
         
