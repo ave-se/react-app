@@ -44,14 +44,23 @@
 
 .contact-links-wrapper {
 	background-color: var(--color-white);
-	display: flex;
-}
-
-.contact-links-wrapper p {
-	font-size: var(--20px);
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(353px, 1fr));
+	gap: 2rem;
 }
 
 .contact-link {
+	display: flex;
+	flex-direction: column;
 	background-color: var(--color-teal-20);
-	padding: var(--16px) var();
+	padding: var(--16px);
+	border-radius: var(--20px);
+	min-width: 368px;
+	font-size: var(--20px);
+}
+
+.contact-link a {
+	margin-top: var(--10px);
+	text-decoration: underline;
+	font-size: var(--16px);
 }

@@ -33,13 +33,16 @@ const Contact = () => {
       </div>
       <div className="contact-links-wrapper">
         <div className="contact-link">
-          <p><span className="bold">Är du handledare och vill vara med på hemsidan?</span> Till registrera</p>
+          <p className="bold">Är du handledare och vill vara med på hemsidan?</p>
+          <a href="">Till registrera</a>
         </div>
         <div className="contact-link">
-          <p><span className="bold">Emaila din handledare!</span> Till formuläret</p>
+          <p className="bold">Emaila din handledare!</p>
+          <a href="">Till formuläret</a>
         </div>
         <div className="contact-link">
-          <p><span className="bold">Ring oss om frågor!</span> Mer om kontakt</p>
+          <p className="bold">Ring oss om frågor!</p>
+          <a href="">Mer om kontakt</a>
         </div>
       </div>
     </div>
