@@ -1,46 +1,53 @@
-
-.home-page {
-  position: absolute;
-  width: 1512px;
-  height: 608px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
-  background-color: #301B08;
-  mix-blend-mode: darken;
-  background-size: cover;
+.hero {
+  position: relative;
 }
 
-
-.home-page h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3rem;
-  text-align: center;
-  white-space: nowrap; /* added to make the text one single line */
+.hero img {
+  display: block;
+  margin: 0 auto;
 }
 
-.home-page .right-button,
-.home-page .left-button {
+.hero-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.left-nav,
+.right-nav {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  fill: white;
-  opacity: 1.0;
-  cursor: pointer;
 }
 
-.home-page .right-button {
-  right: 10px;
+.left-nav {
+  left: 0;
 }
 
-.home-page .left-button {
-  left: 10px;
-  transform: rotate(180deg) translateY(-50%);
+.right-nav {
+  right: 0;
 }
+
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  font-size: 2.2rem; 
+}
+
+.hero-text h1 {
+  white-space: nowrap;
+}
+
