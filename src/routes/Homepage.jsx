@@ -59,7 +59,7 @@ function Homepage() {
 Handledning är, och varför det passar 
 just dig</a></p>
       </div>
-      <div className="ÄrDu">
+      <div className="ärDu">
         
         <p><a>Är du handledare och vill medverka 
 på sidan?</a></p>
