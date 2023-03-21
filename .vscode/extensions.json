@@ -1,5 +1,6 @@
 {
  "recommendations": [
-  "zenclabs.previewjs"
+  "zenclabs.previewjs",
+  "esbenp.prettier-vscode"
  ]
 }

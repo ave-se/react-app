@@ -37,12 +37,14 @@ function Homepage() {
 
 
 
-      
-      <div className="secondImage">
-         <img src="https://images.unsplash.com/photo-1622227922682-56c92e523e58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Second Image" />
-       <div className="second-image-text" ><p>“Handledning är en självklar kvalitetssäkring för vårt arbete och ger oss samtidigt inspiration och möjligheter till personlig utveckling.” Anna, Enhetschef</p>
-      </div>
-      </div>
+    <div className="secondImage">
+  <div style={{ position: "relative" }}>
+    <img src="https://images.unsplash.com/photo-1622227922682-56c92e523e58?ixlib=rb-4.0.3&ixid=MnwxMj..." alt="Second Image" />
+    <div className="secondImageText">
+      <p style={{ fontStyle:'italic'}}>“Handledning är en självklar kvalitetssäkring för vårt arbete och ger oss samtidigt inspiration och möjligheter till personlig utveckling.” Anna, Enhetschef</p>
+    </div>
+  </div>
+</div>
 
 
 
