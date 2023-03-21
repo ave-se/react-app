@@ -1,5 +1,5 @@
 import Tag from "./Tag";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "../styles/CounsellorCard.css";
 import markerPin from "../assets/marker-pin.svg";
@@ -14,10 +14,17 @@ const CounsellorCard = ({
   id,
   elevatorPitch,
 }) => {
+  const navigate = useNavigate();
+
+  const profileUrl = id.toString();
+
   return (
     <>
-      <div className="counsellor-card">
-        <img src={avatarUrl} alt="" />
+      <div className="counsellor-card" onClick={() => navigate(profileUrl)}>
+        <div className="avatar-container">
+          <img src={avatarUrl} alt="" />
+        </div>
+
         <div className="cols-2">
           <p className="name">{firstName}</p>
 
@@ -39,11 +46,7 @@ const CounsellorCard = ({
 
         <div className="info-preview">{elevatorPitch}</div>
 
-        <Link
-          className="profile-link"
-          to={id.toString()}
-          preventScrollReset={true}
-        >
+        <Link className="profile-link" to={profileUrl}>
           Visa Profil
         </Link>
       </div>
