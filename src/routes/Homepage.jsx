@@ -49,7 +49,7 @@ function Homepage() {
 
 
 
-      <div className="SökEfter">
+      <div className="sökEfter">
        
         <p><a>Sök efter handledare som passar just dina behov!</a></p>
       </div>
