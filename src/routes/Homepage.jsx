@@ -47,7 +47,7 @@ function Homepage() {
 
 
 
-      <div className="section5">
+      <div className="SökEfter">
        
         <p><a>Sök efter handledare som passar just dina behov!</a></p>
       </div>
