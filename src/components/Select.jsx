@@ -1,7 +1,7 @@
 const Select = ({ children, name, value, onChange }) => {
   return (
     <select
-      className={value !== "" && "active"}
+      className={value !== "" ? "active" : undefined}
       name={name}
       value={value}
       onChange={onChange}
