@@ -21,7 +21,7 @@ const About = () => {
   return (
     <div className="about-wrapper">
       <input id="collapsible1" className="toggle" type="checkbox"/>
-      <label htmlFor="collapsible1" className="lbl-toggle about-first-title" tabIndex="0"><h2>Vad är handledning</h2><img src={chevron} alt="" /></label>
+      <label htmlFor="collapsible1" className="lbl-toggle" tabIndex="0"><h2>Vad är handledning</h2><img src={chevron} alt="" /></label>
       <div className="collapsible-content">
         <div className="content-inner">
           <p className="bold">
