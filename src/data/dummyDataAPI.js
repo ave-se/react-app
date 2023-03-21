@@ -1,5 +1,13 @@
-import data from "./dummyData";
+//setting the data
+import dummyData from "./dummyData";
 
+let data = {};
+export function setData(newData) {
+  data = newData;
+}
+setData(dummyData);
+
+//"API"
 export async function getGalleryItems(filter) {
   filter = {
     areas: [],
