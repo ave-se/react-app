@@ -1,5 +1,5 @@
 import "../styles/ProfileView.css";
-import { Link, useNavigate, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import * as dummyData from "../data/dummyDataAPI";
 import ScrollToTop from "../helpers/ScrollToTop";
 import Tag from "./Tag";
@@ -11,7 +11,6 @@ export async function loader({ params }) {
 
 const ProfileView = () => {
   const { profile } = useLoaderData();
-  const navigate = useNavigate();
 
   const {
     elevatorPitch,
