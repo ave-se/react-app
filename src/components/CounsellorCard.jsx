@@ -22,7 +22,11 @@ const CounsellorCard = ({
     <>
       <div className="counsellor-card" onClick={() => navigate(profileUrl)}>
         <div className="avatar-container">
-          <img src={avatarUrl} alt="" />
+          <img
+            onLoad={(e) => e.target.classList.add("loaded")}
+            src={avatarUrl}
+            alt={`${firstName} profilbild`}
+          />
         </div>
 
         <div className="cols-2">

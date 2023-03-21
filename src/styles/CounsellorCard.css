@@ -17,8 +17,6 @@
 
 .counsellor-card:hover {
   translate: 0 calc(var(--hover-offset) * -1);
-
-  /* background-color: var(--color-teal-20); */
   box-shadow: 0px var(--hover-offset) 16px rgba(0, 0, 0, 0.2);
   scale: 1;
 }
@@ -26,14 +24,21 @@
 .counsellor-card .avatar-container {
   margin-bottom: var(--8px);
   width: 100%;
+  aspect-ratio: 1/1;
   border-radius: 6px;
   overflow: hidden;
+  background-color: var(--color-grey-20);
 }
 
 .counsellor-card .avatar-container img {
   aspect-ratio: 1/1;
+  opacity: 0;
   object-fit: cover;
   transition: all var(--transition-config);
+}
+
+.counsellor-card .avatar-container img.loaded {
+  opacity: 1;
 }
 
 .counsellor-card:hover .avatar-container img {
