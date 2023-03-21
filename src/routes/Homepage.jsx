@@ -51,7 +51,7 @@ function Homepage() {
        
         <p><a>Sök efter handledare som passar just dina behov!</a></p>
       </div>
-      <div className="section">
+      <div className="HittaMer">
         
         <p><a>Hitta mer information om vad
 Handledning är, och varför det passar 
