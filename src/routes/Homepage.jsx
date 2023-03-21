@@ -59,7 +59,8 @@ just dig</a></p>
       </div>
       <div className="section">
         
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p><a>Är du handledare och vill medverka 
+på sidan?</a></p>
       </div>
     </div>
   );
