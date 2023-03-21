@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .hero {
   position: relative;
 }
@@ -33,6 +34,145 @@
 
 .right-nav {
   right: 0;
+=======
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200vh;
+  background-color:#E1EFEF;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.hero-nav img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+.hero-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.left-nav,
+.right-nav {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-nav {
+  left: 0;
+}
+
+.right-nav {
+  right: 0;
+}
+
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  font-size: 2rem; 
+}
+
+.hero-text h1 {
+  white-space: nowrap;
+}
+
+.lasMer {
+width: 700px;
+height: 150px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+color:black;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 60px;
+ background-color:white; /* Set the background color to white */
+  display: flex; /* Add this line to center the content */
+  justify-content: center;
+  align-items: center;
+box-sizing: border-box;
+border-radius: 16px;
+}
+
+.fiftyThree, .oneHundred{
+display: inline-block;
+flex-direction: column;
+align-items: center;
+padding: 16px;
+gap: 10px;
+width: 368px;
+height: 112px;
+text-align: center;
+top: 128px;
+background: #FFFFFF;
+border-radius: 20px;
+}
+
+.fiftyThree {
+  margin-right: 100px;
+}
+
+.secondImage {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.secondImage img {
+  width: 100%;
+  margin: ;
+}
+
+.secondImageText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: larger;
+  color: #fff;
+  z-index: 1;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  width: 80%;
+  max-width: 600px;
+}
+
+.secondImageText p {
+  margin: 100px;
+>>>>>>> 32091c7 (test)
 }
 
 
