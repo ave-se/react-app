@@ -39,6 +39,7 @@
 
   /* misc */
   --header-height: calc(88 / 16 * 1rem);
+  --footer-height: calc(167 / 16 * 1rem);
   --page-max-width: 1240px;
 
   /* "defaults" */
