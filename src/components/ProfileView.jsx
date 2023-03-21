@@ -56,8 +56,8 @@ const ProfileView = () => {
           </div>
 
           <div className="ProfileView__block ProfileView__tags-container">
-            {areas.map((area) => (
-              <Tag>{area}</Tag>
+            {areas.map((area, i) => (
+              <Tag key={i}>{area}</Tag>
             ))}
           </div>
 

@@ -43,8 +43,8 @@ const CounsellorCard = ({
         </div>
 
         <div className="tags">
-          {areas.map((area) => (
-            <Tag>{area}</Tag>
+          {areas.map((area, i) => (
+            <Tag key={i}>{area}</Tag>
           ))}
         </div>
 
