@@ -47,7 +47,7 @@ function Homepage() {
 
 
 
-      <div className="section">
+      <div className="section5">
         <h2>Section 5</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
