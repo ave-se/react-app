@@ -50,17 +50,17 @@ function Homepage() {
 
 
       <div className="sökEfter">
-        <p><a>Sök efter handledare som passar just dina behov!</a></p>
+        <p><a href="#">Sök efter handledare som passar just dina behov!</a></p>
       </div>
 
       <div className="hittaMer">
-        <p><a>Hitta mer information om vad
+        <p><a href="#" >Hitta mer information om vad
 Handledning är, och varför det passar 
 just dig</a></p>
       </div>
 
       <div className="ärDu">
-        <p><a>Är du handledare och vill medverka 
+        <p><a href="#">Är du handledare och vill medverka 
 på sidan?</a></p>
       </div>
     </div>
