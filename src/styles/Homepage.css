@@ -156,6 +156,7 @@ top: 128px;
 background: #A5D0D0;
 border-radius: 20px;
 margin-bottom: 60px;
+<<<<<<< HEAD
 font-family: 'Source Sans Pro';
 font-style: normal;
 font-weight: 400;
@@ -168,3 +169,7 @@ text-decoration-line: underline;
 div a{
   color: black;
 }
+=======
+}
+
+>>>>>>> edc8958 (Added second image styles)
