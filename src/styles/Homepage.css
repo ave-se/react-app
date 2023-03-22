@@ -143,7 +143,7 @@ margin-bottom: 60px;
 }
 
 
-.sökEfter, .hittaMer, .ärDu {
+.sokEfter, .hittarMer, .arDu {
   display: inline-block;
 flex-direction: column;
 align-items: center;
@@ -153,23 +153,11 @@ width: 368px;
 height: 112px;
 text-align: center;
 top: 128px;
-background: #A5D0D0;
+background: #FFFFFF;
 border-radius: 20px;
 margin-bottom: 60px;
 <<<<<<< HEAD
-font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 25px;
-text-align: center;
-text-decoration-line: underline;
-
 }
 div a{
   color: black;
 }
-=======
-}
-
->>>>>>> edc8958 (Added second image styles)
