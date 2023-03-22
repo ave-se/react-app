@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 200vh;
-  background-color:#E1EFEF;
+  background-color: #e1efef;
 }
 
 .hero {
@@ -16,12 +16,10 @@
   margin: ;
 }
 
-
 .hero-nav img:hover {
   opacity: 0.8;
   cursor: pointer;
 }
-
 
 .hero-nav {
   position: absolute;
@@ -51,7 +49,6 @@
   right: 0;
 }
 
-
 .hero-text {
   position: absolute;
   top: 50%;
@@ -60,7 +57,7 @@
   text-align: center;
   color: #fff;
   z-index: 1;
-  font-size: 2rem; 
+  font-size: 2rem;
 }
 
 .hero-text h1 {
@@ -68,40 +65,41 @@
 }
 
 .lasMer {
-width: 700px;
-height: 150px;
-font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 30px;
-text-align: center;
-color:black;
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 60px;
- background-color:white; /* Set the background color to white */
+  width: 700px;
+  height: 150px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: black;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 60px;
+  background-color: white; /* Set the background color to white */
   display: flex; /* Add this line to center the content */
   justify-content: center;
   align-items: center;
-box-sizing: border-box;
-border-radius: 16px;
+  box-sizing: border-box;
+  border-radius: 16px;
 }
 
-.fiftyThree, .oneHundred{
-display: inline-block;
-flex-direction: column;
-align-items: center;
-padding: 16px;
-gap: 10px;
-width: 368px;
-height: 112px;
-text-align: center;
-top: 128px;
-background: #FFFFFF;
-border-radius: 20px;
-margin-bottom: 60px;
+.fiftyThree,
+.oneHundred {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+  width: 368px;
+  height: 112px;
+  text-align: center;
+  top: 128px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 60px;
 }
 
 .fiftyThree {
@@ -117,8 +115,8 @@ margin-bottom: 60px;
 
 .secondImage img {
   width: 100%;
- display: block;
- height: auto; 
+  display: block;
+  height: auto;
 }
 
 .secondImageText {
@@ -142,29 +140,45 @@ margin-bottom: 60px;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-
-.sokEfter, .hittarMer, .arDu {
+.sokEfter,
+.hittarMer,
+.arDu {
   display: inline-block;
-flex-direction: column;
-align-items: center;
-padding: 16px;
-gap: 10px;
-width: 368px;
-height: 112px;
-text-align: center;
-top: 128px;
-background: #FFFFFF;
-border-radius: 20px;
-margin-bottom: 60px;
-font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 25px;
-text-align: center;
-text-decoration-line: underline;
-
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+  width: 368px;
+  height: 112px;
+  text-align: center;
+  top: 128px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration-line: underline;
 }
-div a{
+div a {
   color: black;
+}
+
+.green-box-container {
+  display: flex;
+  gap: 10px;
+}
+
+.green-box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 33%;
+  background-color: var(--color-teal-60);
 }
