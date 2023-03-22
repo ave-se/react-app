@@ -1,6 +1,8 @@
 {
- "recommendations": [
-  "zenclabs.previewjs",
-  "esbenp.prettier-vscode"
- ]
+  "recommendations": [
+    "zenclabs.previewjs",
+    "esbenp.prettier-vscode",
+    "ms-vscode.live-server",
+    "SeoJunYoo.react-component-preview"
+  ]
 }
