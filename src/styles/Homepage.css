@@ -156,7 +156,14 @@ top: 128px;
 background: #FFFFFF;
 border-radius: 20px;
 margin-bottom: 60px;
-<<<<<<< HEAD
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+text-decoration-line: underline;
+
 }
 div a{
   color: black;
